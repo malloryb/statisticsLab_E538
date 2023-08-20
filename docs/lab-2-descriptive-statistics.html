@@ -215,7 +215,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2.7" data-path="lab-2-descriptive-statistics.html"><a href="lab-2-descriptive-statistics.html#writing-assignment-1"><i class="fa fa-check"></i><b>2.2.7</b> Writing assignment</a></li>
 <li class="chapter" data-level="2.2.8" data-path="lab-2-descriptive-statistics.html"><a href="lab-2-descriptive-statistics.html#practice-problems"><i class="fa fa-check"></i><b>2.2.8</b> Practice Problems</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="lab-2-descriptive-statistics.html"><a href="lab-2-descriptive-statistics.html#section"><i class="fa fa-check"></i><b>2.3</b> </a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="lab-3-correlation.html"><a href="lab-3-correlation.html"><i class="fa fa-check"></i><b>3</b> Lab 3: Correlation</a>
 <ul>
@@ -523,22 +522,22 @@ $("#coverpic").hide();
 <h4><span class="header-section-number">2.2.3.1</span> range<a href="lab-2-descriptive-statistics.html#range" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The range is the minimum and maximum values in the set, we use the <code>range</code> function.</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="lab-2-descriptive-statistics.html#cb21-1" tabindex="-1"></a><span class="fu">range</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] -5.402173 22.324777</code></pre>
+<pre><code>## [1]  0.008181047 21.516440534</code></pre>
 </div>
 <div id="var-variance" class="section level4 hasAnchor" number="2.2.3.2">
 <h4><span class="header-section-number">2.2.3.2</span> var = variance<a href="lab-2-descriptive-statistics.html#var-variance" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We can find the sample variance using <code>var</code>. Note, divides by (n-1)</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="lab-2-descriptive-statistics.html#cb23-1" tabindex="-1"></a><span class="fu">var</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] 31.86346</code></pre>
+<pre><code>## [1] 22.56653</code></pre>
 </div>
 <div id="sd-standard-deviation" class="section level4 hasAnchor" number="2.2.3.3">
 <h4><span class="header-section-number">2.2.3.3</span> sd = standard deviation<a href="lab-2-descriptive-statistics.html#sd-standard-deviation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We find the sample standard deviation us SD. Note, divides by (n-1)</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="lab-2-descriptive-statistics.html#cb25-1" tabindex="-1"></a><span class="fu">sd</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] 5.644773</code></pre>
+<pre><code>## [1] 4.750424</code></pre>
 <p>Remember that the standard deviation is just the square root of the variance, see:</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="lab-2-descriptive-statistics.html#cb27-1" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="fu">var</span>(sample_numbers))</span></code></pre></div>
-<pre><code>## [1] 5.644773</code></pre>
+<pre><code>## [1] 4.750424</code></pre>
 </div>
 <div id="all-descriptives" class="section level4 hasAnchor" number="2.2.3.4">
 <h4><span class="header-section-number">2.2.3.4</span> All Descriptives<a href="lab-2-descriptive-statistics.html#all-descriptives" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -546,21 +545,21 @@ $("#coverpic").hide();
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="lab-2-descriptive-statistics.html#cb29-1" tabindex="-1"></a>sample_numbers <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>,<span class="dv">10</span>,<span class="dv">5</span>)</span>
 <span id="cb29-2"><a href="lab-2-descriptive-statistics.html#cb29-2" tabindex="-1"></a></span>
 <span id="cb29-3"><a href="lab-2-descriptive-statistics.html#cb29-3" tabindex="-1"></a><span class="fu">sum</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] 1000.009</code></pre>
+<pre><code>## [1] 991.5988</code></pre>
 <div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="lab-2-descriptive-statistics.html#cb31-1" tabindex="-1"></a><span class="fu">length</span>(sample_numbers)</span></code></pre></div>
 <pre><code>## [1] 100</code></pre>
 <div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="lab-2-descriptive-statistics.html#cb33-1" tabindex="-1"></a><span class="fu">mean</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] 10.00009</code></pre>
+<pre><code>## [1] 9.915988</code></pre>
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="lab-2-descriptive-statistics.html#cb35-1" tabindex="-1"></a><span class="fu">median</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] 9.783127</code></pre>
+<pre><code>## [1] 9.688554</code></pre>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="lab-2-descriptive-statistics.html#cb37-1" tabindex="-1"></a><span class="fu">my_mode</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] 6.11279</code></pre>
+<pre><code>## [1] 5.602337</code></pre>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="lab-2-descriptive-statistics.html#cb39-1" tabindex="-1"></a><span class="fu">range</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] -2.525404 20.598464</code></pre>
+<pre><code>## [1] -0.7787987 25.7258981</code></pre>
 <div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="lab-2-descriptive-statistics.html#cb41-1" tabindex="-1"></a><span class="fu">var</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] 24.41354</code></pre>
+<pre><code>## [1] 23.98329</code></pre>
 <div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="lab-2-descriptive-statistics.html#cb43-1" tabindex="-1"></a><span class="fu">sd</span>(sample_numbers)</span></code></pre></div>
-<pre><code>## [1] 4.941006</code></pre>
+<pre><code>## [1] 4.897274</code></pre>
 </div>
 </div>
 <div id="descriptives-by-conditions" class="section level3 hasAnchor" number="2.2.4">
@@ -573,11 +572,11 @@ $("#coverpic").hide();
 <p>If you look at the <code>my_df</code> data frame, you will see it has 100 rows, there are 10 rows for each condition with a label in the <code>conditions</code> column, and 10 scores for each condition in the <code>scores</code> column. What if you wanted to know the mean of the scores in each condition? You would want to find 10 means.</p>
 <p>The slow way to do it would be like this:</p>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="lab-2-descriptive-statistics.html#cb46-1" tabindex="-1"></a><span class="fu">mean</span>(my_df[my_df<span class="sc">$</span>conditions<span class="sc">==</span><span class="st">&quot;A&quot;</span>,]<span class="sc">$</span>scores)</span></code></pre></div>
-<pre><code>## [1] 9.681262</code></pre>
+<pre><code>## [1] 9.577758</code></pre>
 <div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="lab-2-descriptive-statistics.html#cb48-1" tabindex="-1"></a><span class="fu">mean</span>(my_df[my_df<span class="sc">$</span>conditions<span class="sc">==</span><span class="st">&quot;B&quot;</span>,]<span class="sc">$</span>scores)</span></code></pre></div>
-<pre><code>## [1] 9.490158</code></pre>
+<pre><code>## [1] 11.47921</code></pre>
 <div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="lab-2-descriptive-statistics.html#cb50-1" tabindex="-1"></a><span class="fu">mean</span>(my_df[my_df<span class="sc">$</span>conditions<span class="sc">==</span><span class="st">&quot;C&quot;</span>,]<span class="sc">$</span>scores)</span></code></pre></div>
-<pre><code>## [1] 9.003917</code></pre>
+<pre><code>## [1] 11.62186</code></pre>
 <div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="lab-2-descriptive-statistics.html#cb52-1" tabindex="-1"></a><span class="co"># and then keep going</span></span></code></pre></div>
 <p>Nobody wants to do that! Not, me I stopped doing it that way, you should to.</p>
 <div id="group_by-and-summarise" class="section level4 hasAnchor" number="2.2.4.1">
@@ -598,16 +597,16 @@ $("#coverpic").hide();
 <pre><code>## # A tibble: 10 × 2
 ##    conditions means
 ##    &lt;chr&gt;      &lt;dbl&gt;
-##  1 A           9.68
-##  2 B           9.49
-##  3 C           9.00
-##  4 D           9.45
-##  5 E          13.8 
-##  6 F           8.02
-##  7 G           7.44
-##  8 H           9.50
-##  9 I           8.78
-## 10 J           7.96</code></pre>
+##  1 A           9.58
+##  2 B          11.5 
+##  3 C          11.6 
+##  4 D           7.78
+##  5 E           9.18
+##  6 F          11.0 
+##  7 G          10.3 
+##  8 H          12.3 
+##  9 I           8.71
+## 10 J          10.3</code></pre>
 <p>A couple things now. First, the print out of this was ugly. Let’s fix that. we put the results of our code into a new variable, then we use <code>knitr::kable</code> to print it out nicely when we <code>knit</code> the document</p>
 <div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="lab-2-descriptive-statistics.html#cb59-1" tabindex="-1"></a>summary_df <span class="ot">&lt;-</span> my_df <span class="sc">%&gt;%</span></span>
 <span id="cb59-2"><a href="lab-2-descriptive-statistics.html#cb59-2" tabindex="-1"></a>               <span class="fu">group_by</span>(conditions) <span class="sc">%&gt;%</span></span>
@@ -624,43 +623,43 @@ $("#coverpic").hide();
 <tbody>
 <tr class="odd">
 <td align="left">A</td>
-<td align="right">9.681262</td>
+<td align="right">9.577758</td>
 </tr>
 <tr class="even">
 <td align="left">B</td>
-<td align="right">9.490158</td>
+<td align="right">11.479208</td>
 </tr>
 <tr class="odd">
 <td align="left">C</td>
-<td align="right">9.003917</td>
+<td align="right">11.621857</td>
 </tr>
 <tr class="even">
 <td align="left">D</td>
-<td align="right">9.448894</td>
+<td align="right">7.784737</td>
 </tr>
 <tr class="odd">
 <td align="left">E</td>
-<td align="right">13.801615</td>
+<td align="right">9.183062</td>
 </tr>
 <tr class="even">
 <td align="left">F</td>
-<td align="right">8.018643</td>
+<td align="right">10.998256</td>
 </tr>
 <tr class="odd">
 <td align="left">G</td>
-<td align="right">7.440586</td>
+<td align="right">10.258179</td>
 </tr>
 <tr class="even">
 <td align="left">H</td>
-<td align="right">9.503455</td>
+<td align="right">12.333682</td>
 </tr>
 <tr class="odd">
 <td align="left">I</td>
-<td align="right">8.779989</td>
+<td align="right">8.709123</td>
 </tr>
 <tr class="even">
 <td align="left">J</td>
-<td align="right">7.964980</td>
+<td align="right">10.293394</td>
 </tr>
 </tbody>
 </table>
@@ -685,53 +684,53 @@ $("#coverpic").hide();
 <tbody>
 <tr class="odd">
 <td align="left">A</td>
-<td align="right">9.681262</td>
-<td align="right">4.673248</td>
+<td align="right">9.577758</td>
+<td align="right">4.934772</td>
 </tr>
 <tr class="even">
 <td align="left">B</td>
-<td align="right">9.490158</td>
-<td align="right">4.168524</td>
+<td align="right">11.479208</td>
+<td align="right">5.289792</td>
 </tr>
 <tr class="odd">
 <td align="left">C</td>
-<td align="right">9.003917</td>
-<td align="right">5.115419</td>
+<td align="right">11.621857</td>
+<td align="right">2.293935</td>
 </tr>
 <tr class="even">
 <td align="left">D</td>
-<td align="right">9.448894</td>
-<td align="right">5.563829</td>
+<td align="right">7.784737</td>
+<td align="right">3.576180</td>
 </tr>
 <tr class="odd">
 <td align="left">E</td>
-<td align="right">13.801615</td>
-<td align="right">4.059586</td>
+<td align="right">9.183062</td>
+<td align="right">3.885247</td>
 </tr>
 <tr class="even">
 <td align="left">F</td>
-<td align="right">8.018643</td>
-<td align="right">4.560381</td>
+<td align="right">10.998256</td>
+<td align="right">4.854795</td>
 </tr>
 <tr class="odd">
 <td align="left">G</td>
-<td align="right">7.440586</td>
-<td align="right">4.795118</td>
+<td align="right">10.258179</td>
+<td align="right">6.386039</td>
 </tr>
 <tr class="even">
 <td align="left">H</td>
-<td align="right">9.503455</td>
-<td align="right">4.144817</td>
+<td align="right">12.333682</td>
+<td align="right">3.323308</td>
 </tr>
 <tr class="odd">
 <td align="left">I</td>
-<td align="right">8.779989</td>
-<td align="right">4.514545</td>
+<td align="right">8.709123</td>
+<td align="right">5.390200</td>
 </tr>
 <tr class="even">
 <td align="left">J</td>
-<td align="right">7.964980</td>
-<td align="right">6.006546</td>
+<td align="right">10.293394</td>
+<td align="right">4.346204</td>
 </tr>
 </tbody>
 </table>
@@ -757,73 +756,73 @@ $("#coverpic").hide();
 <tbody>
 <tr class="odd">
 <td align="left">A</td>
-<td align="right">9.681262</td>
-<td align="right">4.673248</td>
-<td align="right">1.8602118</td>
-<td align="right">17.99139</td>
+<td align="right">9.577758</td>
+<td align="right">4.934772</td>
+<td align="right">-0.1688217</td>
+<td align="right">18.75263</td>
 </tr>
 <tr class="even">
 <td align="left">B</td>
-<td align="right">9.490158</td>
-<td align="right">4.168524</td>
-<td align="right">4.9619945</td>
-<td align="right">19.71188</td>
+<td align="right">11.479208</td>
+<td align="right">5.289792</td>
+<td align="right">4.7542035</td>
+<td align="right">19.96175</td>
 </tr>
 <tr class="odd">
 <td align="left">C</td>
-<td align="right">9.003917</td>
-<td align="right">5.115419</td>
-<td align="right">0.8571914</td>
-<td align="right">17.25975</td>
+<td align="right">11.621857</td>
+<td align="right">2.293935</td>
+<td align="right">8.7068517</td>
+<td align="right">15.88881</td>
 </tr>
 <tr class="even">
 <td align="left">D</td>
-<td align="right">9.448894</td>
-<td align="right">5.563829</td>
-<td align="right">0.8183110</td>
-<td align="right">17.32994</td>
+<td align="right">7.784737</td>
+<td align="right">3.576180</td>
+<td align="right">2.6785798</td>
+<td align="right">13.89546</td>
 </tr>
 <tr class="odd">
 <td align="left">E</td>
-<td align="right">13.801615</td>
-<td align="right">4.059586</td>
-<td align="right">5.2228811</td>
-<td align="right">18.02809</td>
+<td align="right">9.183062</td>
+<td align="right">3.885247</td>
+<td align="right">0.7355634</td>
+<td align="right">14.67671</td>
 </tr>
 <tr class="even">
 <td align="left">F</td>
-<td align="right">8.018643</td>
-<td align="right">4.560381</td>
-<td align="right">-2.7919518</td>
-<td align="right">13.47669</td>
+<td align="right">10.998256</td>
+<td align="right">4.854795</td>
+<td align="right">1.9237934</td>
+<td align="right">17.08612</td>
 </tr>
 <tr class="odd">
 <td align="left">G</td>
-<td align="right">7.440586</td>
-<td align="right">4.795118</td>
-<td align="right">2.7044960</td>
-<td align="right">17.16583</td>
+<td align="right">10.258179</td>
+<td align="right">6.386039</td>
+<td align="right">3.4987251</td>
+<td align="right">22.81592</td>
 </tr>
 <tr class="even">
 <td align="left">H</td>
-<td align="right">9.503455</td>
-<td align="right">4.144817</td>
-<td align="right">4.1554222</td>
-<td align="right">14.91468</td>
+<td align="right">12.333682</td>
+<td align="right">3.323308</td>
+<td align="right">7.8046717</td>
+<td align="right">16.42523</td>
 </tr>
 <tr class="odd">
 <td align="left">I</td>
-<td align="right">8.779989</td>
-<td align="right">4.514545</td>
-<td align="right">1.5479009</td>
-<td align="right">14.93203</td>
+<td align="right">8.709123</td>
+<td align="right">5.390200</td>
+<td align="right">0.8393236</td>
+<td align="right">19.31979</td>
 </tr>
 <tr class="even">
 <td align="left">J</td>
-<td align="right">7.964980</td>
-<td align="right">6.006546</td>
-<td align="right">-2.7283513</td>
-<td align="right">14.83852</td>
+<td align="right">10.293394</td>
+<td align="right">4.346204</td>
+<td align="right">2.5797894</td>
+<td align="right">16.91963</td>
 </tr>
 </tbody>
 </table>
@@ -936,11 +935,8 @@ $("#coverpic").hide();
 <li><p>Using the life expectancy data set, produce a table of output showing the descriptive statistics (measures of central tendency and variability) for both years 1800 and 1934 (during the Great Depression).</p></li>
 <li><p>Plot histograms of life expectancy for both years. How are these distributions different? (Hint: Plot these on the same axes so that they are comparable).</p></li>
 </ol>
-</div>
-</div>
-<div id="section" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> </h2>
 
+</div>
 </div>
 </div>
             </section>
