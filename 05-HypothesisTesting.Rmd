@@ -5,7 +5,7 @@
 $("#coverpic").hide();
 </script>
 ```
-[ The null hypothesis is never proved or established, but is possibly disproved, in the course of experimentation. Every experiment may be said to exist only to give the facts a chance of disproving the null hypothesis. ---R. A. Fisher ]{.newthought}
+[The null hypothesis is never proved or established, but is possibly disproved, in the course of experimentation. Every experiment may be said to exist only to give the facts a chance of disproving the null hypothesis. ---R. A. Fisher]{.newthought}
 
 ## R
 

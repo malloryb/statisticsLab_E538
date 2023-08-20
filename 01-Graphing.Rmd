@@ -5,7 +5,7 @@
 $("#coverpic").hide();
 </script>
 ```
-[ The commonality between science and art is in trying to see profoundly - to develop strategies of seeing and showing. ---Edward Tufte ]{.newthought}
+[The commonality between science and art is in trying to see profoundly - to develop strategies of seeing and showing. ---Edward Tufte]{.newthought}
 
 As we have found out from the textbook and lecture, when we measure things, we get lots of numbers. Too many. Sometimes so many your head explodes just thinking about them. One of **the most helpful things** you can do to begin to make sense of these numbers, is to look at them in graphical form. Unfortunately, for sight-impaired individuals, graphical summary of data is much more well-developed than other forms of summarizing data for our human senses. Some researchers are developing auditory versions of visual graphs, a process called **sonification**, but we aren't prepared to demonstrate that here. Instead, we will make charts, and plots, and things to look at, rather than the numbers themselves, mainly because these are tools that are easiest to get our hands on, they are the most developed, and they work really well for visual summary. If time permits, at some point I would like to come back here and do the same things with sonification. I think that would be really, really cool!
 
@@ -26,7 +26,7 @@ Our general goals for this first lab are to get your feet wet, so to speak. We'l
 
 ## R
 
-### Install R and R Studio 
+### Install R and R Studio
 
 First, we need to [install R and R-studio](#0). Download and install R onto your computer. The R website is: <http://www.r-project.org>
 

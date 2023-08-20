@@ -215,7 +215,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2.7" data-path="lab-2-descriptive-statistics.html"><a href="lab-2-descriptive-statistics.html#writing-assignment-1"><i class="fa fa-check"></i><b>2.2.7</b> Writing assignment</a></li>
 <li class="chapter" data-level="2.2.8" data-path="lab-2-descriptive-statistics.html"><a href="lab-2-descriptive-statistics.html#practice-problems"><i class="fa fa-check"></i><b>2.2.8</b> Practice Problems</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="lab-2-descriptive-statistics.html"><a href="lab-2-descriptive-statistics.html#section"><i class="fa fa-check"></i><b>2.3</b> </a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="lab-3-correlation.html"><a href="lab-3-correlation.html"><i class="fa fa-check"></i><b>3</b> Lab 3: Correlation</a>
 <ul>
@@ -399,16 +398,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.4.7" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#conduct-the-anova-2"><i class="fa fa-check"></i><b>11.4.7</b> Conduct the ANOVA</a></li>
 <li class="chapter" data-level="11.4.8" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#generalization-exercise-10"><i class="fa fa-check"></i><b>11.4.8</b> Generalization Exercise</a></li>
 <li class="chapter" data-level="11.4.9" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#writing-assignment-9"><i class="fa fa-check"></i><b>11.4.9</b> Writing assignment</a></li>
+<li class="chapter" data-level="11.4.10" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#practice-problems-9"><i class="fa fa-check"></i><b>11.4.10</b> Practice Problems</a></li>
 </ul></li>
-<li class="chapter" data-level="11.5" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#excel"><i class="fa fa-check"></i><b>11.5</b> Excel</a></li>
-<li class="chapter" data-level="11.6" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#spss"><i class="fa fa-check"></i><b>11.6</b> SPSS</a>
-<ul>
-<li class="chapter" data-level="11.6.1" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#experiment-background"><i class="fa fa-check"></i><b>11.6.1</b> Experiment Background</a></li>
-<li class="chapter" data-level="11.6.2" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#conduct-a-mixed-factorial-analysis-of-variance-anova"><i class="fa fa-check"></i><b>11.6.2</b> Conduct a Mixed-Factorial Analysis of Variance (ANOVA)</a></li>
-<li class="chapter" data-level="11.6.3" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#calculate-simple-effects"><i class="fa fa-check"></i><b>11.6.3</b> Calculate simple effects</a></li>
-<li class="chapter" data-level="11.6.4" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#practice-problems-9"><i class="fa fa-check"></i><b>11.6.4</b> Practice Problems</a></li>
-</ul></li>
-<li class="chapter" data-level="11.7" data-path="lab-11-mixed-factorial-anova.html"><a href="lab-11-mixed-factorial-anova.html#jamovi"><i class="fa fa-check"></i><b>11.7</b> JAMOVI</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -474,7 +465,7 @@ let sample endlessly take gumballs out. Check it out:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb1-1" tabindex="-1"></a>gumballs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>)</span>
 <span id="cb1-2"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb1-2" tabindex="-1"></a>sample_of_gumballs <span class="ot">&lt;-</span><span class="fu">sample</span>(gumballs, <span class="dv">10</span>, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
 <span id="cb1-3"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb1-3" tabindex="-1"></a>sample_of_gumballs</span></code></pre></div>
-<pre><code>##  [1] &quot;B&quot; &quot;B&quot; &quot;A&quot; &quot;B&quot; &quot;A&quot; &quot;B&quot; &quot;A&quot; &quot;A&quot; &quot;B&quot; &quot;B&quot;</code></pre>
+<pre><code>##  [1] &quot;B&quot; &quot;A&quot; &quot;B&quot; &quot;A&quot; &quot;A&quot; &quot;B&quot; &quot;B&quot; &quot;A&quot; &quot;B&quot; &quot;B&quot;</code></pre>
 <p>Here the sample function randomly picks A or B each time. We set it do
 this 10 times, so our sample has 10 things in it. We set <code>replace=TRUE</code>
 so that after each sample, we put the item back into the gumball machine
@@ -482,7 +473,7 @@ and start again. Here’s another example with numbers</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb3-1" tabindex="-1"></a>some_numbers <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">5</span>)</span>
 <span id="cb3-2"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb3-2" tabindex="-1"></a>sample_of_numbers <span class="ot">&lt;-</span><span class="fu">sample</span>(some_numbers, <span class="dv">20</span>, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
 <span id="cb3-3"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb3-3" tabindex="-1"></a>sample_of_numbers</span></code></pre></div>
-<pre><code>##  [1] 5 5 5 1 5 5 2 5 5 2 3 1 1 4 5 5 5 5 5 3</code></pre>
+<pre><code>##  [1] 5 5 4 1 5 5 4 1 2 5 5 3 3 1 5 5 5 5 2 2</code></pre>
 <p>Let’s do one more thing with sample. Let’s sample 1000 times from our
 <code>some_numbers</code> variable, and then look at the histogram</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb5-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
@@ -526,7 +517,7 @@ the coin, if it is fair, should have a 50% chance of being heads or
 tails. Here’s how we flip a coin 10 times using <code>rbinom</code>.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb8-1" tabindex="-1"></a>coin_flips <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="dv">10</span>,<span class="dv">1</span>,.<span class="dv">5</span>)</span>
 <span id="cb8-2"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb8-2" tabindex="-1"></a>coin_flips</span></code></pre></div>
-<pre><code>##  [1] 1 0 0 1 1 0 1 1 1 1</code></pre>
+<pre><code>##  [1] 1 0 0 1 0 0 1 0 0 1</code></pre>
 <p>We get a bunch of 0s, and 1s. We can pretend 0 = tails, and 1 = heads.
 Great, now we can do coin flipping if we want. For example, if you flip
 10 coins, how many heads do you get? We can can do the above again, and
@@ -649,43 +640,43 @@ the means for each sample, and put them in a table:</p>
 <tbody>
 <tr class="odd">
 <td align="right">1</td>
-<td align="right">0.3646150</td>
+<td align="right">0.1587582</td>
 </tr>
 <tr class="even">
 <td align="right">2</td>
-<td align="right">-0.1635561</td>
+<td align="right">-0.1588186</td>
 </tr>
 <tr class="odd">
 <td align="right">3</td>
-<td align="right">0.1001459</td>
+<td align="right">-0.0603155</td>
 </tr>
 <tr class="even">
 <td align="right">4</td>
-<td align="right">-0.0829648</td>
+<td align="right">-0.2311892</td>
 </tr>
 <tr class="odd">
 <td align="right">5</td>
-<td align="right">-0.3073897</td>
+<td align="right">0.6111671</td>
 </tr>
 <tr class="even">
 <td align="right">6</td>
-<td align="right">-0.1762790</td>
+<td align="right">-0.0570110</td>
 </tr>
 <tr class="odd">
 <td align="right">7</td>
-<td align="right">0.3429012</td>
+<td align="right">-0.1072576</td>
 </tr>
 <tr class="even">
 <td align="right">8</td>
-<td align="right">0.0939321</td>
+<td align="right">0.1387129</td>
 </tr>
 <tr class="odd">
 <td align="right">9</td>
-<td align="right">-0.4457363</td>
+<td align="right">-0.2248816</td>
 </tr>
 <tr class="even">
 <td align="right">10</td>
-<td align="right">0.3721992</td>
+<td align="right">-0.2640512</td>
 </tr>
 </tbody>
 </table>
@@ -708,7 +699,7 @@ eh? That’s because we only took 10 samples right.</p>
 <p>Notice one more thing…What is the mean of our 10 sample means? This is
 a mean of means. Remember that.</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb25-1" tabindex="-1"></a><span class="fu">mean</span>(sample_means<span class="sc">$</span>means)</span></code></pre></div>
-<pre><code>## [1] 0.009786762</code></pre>
+<pre><code>## [1] -0.01948865</code></pre>
 <p>Well, that’s pretty close to zero. Which is good. When we average over
 our samples, they better estimate the mean of the distribution they came
 from.</p>
@@ -973,27 +964,27 @@ doing here.</p>
 <span id="cb45-2"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb45-2" tabindex="-1"></a>my_sd <span class="ot">&lt;-</span><span class="fu">sd</span>(some_numbers)</span>
 <span id="cb45-3"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb45-3" tabindex="-1"></a></span>
 <span id="cb45-4"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb45-4" tabindex="-1"></a><span class="fu">print</span>(my_mean)</span></code></pre></div>
-<pre><code>## [1] 49.81762</code></pre>
+<pre><code>## [1] 45.24771</code></pre>
 <div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb47-1" tabindex="-1"></a><span class="fu">print</span>(my_sd)</span></code></pre></div>
-<pre><code>## [1] 20.73677</code></pre>
+<pre><code>## [1] 27.40315</code></pre>
 <ol start="3" style="list-style-type: decimal">
 <li>subtract the mean from your numbers</li>
 </ol>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb49-1" tabindex="-1"></a>differences<span class="ot">&lt;-</span>some_numbers<span class="sc">-</span>my_mean</span>
 <span id="cb49-2"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb49-2" tabindex="-1"></a><span class="fu">print</span>(differences)</span></code></pre></div>
-<pre><code>##  [1]  10.1212862  22.2589832  -0.9174423   8.3089987 -52.7352099  19.3498746
-##  [7]   2.4239692  23.8203269  26.8378982 -14.1934365   3.0941188  -2.4843947
-## [13]  -1.5217306   6.8145149 -26.2860595 -21.3253332 -18.3124406  23.3504826
-## [19] -23.3312588  14.7268526</code></pre>
+<pre><code>##  [1] -26.914896  -8.172625 -19.367227   3.331143 -36.854408 -17.714894
+##  [7] -16.854694  59.276711 -23.256611  -8.658419  53.186711 -10.286889
+## [13]  19.354171  10.358371 -20.807302 -18.187782  -4.774832  25.130660
+## [19]  46.304269  -5.091458</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>divide by the standard deviation</li>
 </ol>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb51-1" tabindex="-1"></a>z_scores<span class="ot">&lt;-</span>differences<span class="sc">/</span>my_sd</span>
 <span id="cb51-2"><a href="lab-4-normal-distribution-central-limit-theorem.html#cb51-2" tabindex="-1"></a><span class="fu">print</span>(z_scores)</span></code></pre></div>
-<pre><code>##  [1]  0.48808405  1.07340653 -0.04424230  0.40068917 -2.54307747  0.93311907
-##  [7]  0.11689233  1.14870002  1.29421793 -0.68445747  0.14920930 -0.11980626
-## [13] -0.07338321  0.32861990 -1.26760633 -1.02838264 -0.88309036  1.12604248
-## [19] -1.12511544  0.71018068</code></pre>
+<pre><code>##  [1] -0.9821824 -0.2982366 -0.7067517  0.1215606 -1.3448966 -0.6464546
+##  [7] -0.6150640  2.1631346 -0.8486837 -0.3159643  1.9408974 -0.3753907
+## [13]  0.7062753  0.3779992 -0.7593032 -0.6637113 -0.1742439  0.9170718
+## [19]  1.6897423 -0.1857982</code></pre>
 <p>Done. Now you have converted your original numbers into what we call
 standardized scores. They are standardized to have the same properties
 (assumed properties) as a normal distribution with mean = 0, and SD = 1.</p>

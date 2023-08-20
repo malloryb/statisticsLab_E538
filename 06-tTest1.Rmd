@@ -5,7 +5,7 @@
 $("#coverpic").hide();
 </script>
 ```
-[ Any experiment may be regarded as forming an individual of a 'population' of experiments which might be performed under the same conditions. A series of experiments is a sample drawn from this population. ---William Sealy Gossett ]{.newthought}
+[Any experiment may be regarded as forming an individual of a 'population' of experiments which might be performed under the same conditions. A series of experiments is a sample drawn from this population. ---William Sealy Gossett]{.newthought}
 
 ::: marginnote
 This lab is modified and extended from [Open Stats Labs](https://sites.trinity.edu/osl). Thanks to Open Stats Labs (Dr. Kevin P. McIntyre) for their fantastic work.
@@ -424,9 +424,8 @@ Complete the writing assignment described in your R Markdown document for this l
 
 1.  Answer the following questions
 
-```{=html}
 <!-- -->
-```
+
 a.  Explain the general concept of a t value, and how it is different from a mean and the standard error. (.33 points)
 
 b.  Imagine you obtained a t-value with an associated p-value of .25. Explain what this means. (.33 points)

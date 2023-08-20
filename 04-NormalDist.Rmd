@@ -11,8 +11,8 @@ editor_options:
 $("#coverpic").hide();
 </script>
 ```
-[ By a small sample, we may judge of the whole piece. ---Miguel de
-Cervantes from Don Quixote ]{.newthought}
+[By a small sample, we may judge of the whole piece. ---Miguel de
+Cervantes from Don Quixote]{.newthought}
 
 ## General Goals
 
@@ -639,23 +639,20 @@ document for this lab.
     = 25. Run the simulation 1000 times, taking 1000 samples, and
     computing the sample mean each time.
 
-```{=html}
 <!-- -->
-```
+
 a.  Plot the sampling distribution of the mean in a histogram
 b.  Report the mean of the sampling distribution of the mean
 c.  Report the standard deviation of the sampling distribution of the
     mean
 
-```{=html}
 <!-- -->
-```
+
 2.  Repeat all of the above, except change the sample-size to 100 for
     all simulations
 
-```{=html}
 <!-- -->
-```
+
 a.  Plot the sampling distribution of the mean in a histogram
 b.  Report the mean of the sampling distribution of the mean
 c.  Report the standard deviation of the sampling distribution of the

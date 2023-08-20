@@ -5,7 +5,7 @@
 $("#coverpic").hide();
 </script>
 ```
-[ Describing comic sensibility is near impossible. It's sort of an abstract silliness, that sometimes the joke isn't the star. ---Dana Carvey ]{.newthought}
+[Describing comic sensibility is near impossible. It's sort of an abstract silliness, that sometimes the joke isn't the star. ---Dana Carvey]{.newthought}
 
 The purpose of this lab is to show you how to compute basic descriptive statistics, including measures of central tendency (mean, mode, median) and variation (range, variance, standard deviation).
 
