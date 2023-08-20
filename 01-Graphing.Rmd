@@ -1,13 +1,11 @@
 # Lab 1: Graphing Data
 
+```{=html}
 <script>
 $("#coverpic").hide();
 </script>
-
-<span class="newthought">
-The commonality between science and art is in trying to see profoundly - to develop strategies of seeing and showing.
----Edward Tufte
-</span>
+```
+[ The commonality between science and art is in trying to see profoundly - to develop strategies of seeing and showing. ---Edward Tufte ]{.newthought}
 
 As we have found out from the textbook and lecture, when we measure things, we get lots of numbers. Too many. Sometimes so many your head explodes just thinking about them. One of **the most helpful things** you can do to begin to make sense of these numbers, is to look at them in graphical form. Unfortunately, for sight-impaired individuals, graphical summary of data is much more well-developed than other forms of summarizing data for our human senses. Some researchers are developing auditory versions of visual graphs, a process called **sonification**, but we aren't prepared to demonstrate that here. Instead, we will make charts, and plots, and things to look at, rather than the numbers themselves, mainly because these are tools that are easiest to get our hands on, they are the most developed, and they work really well for visual summary. If time permits, at some point I would like to come back here and do the same things with sonification. I think that would be really, really cool!
 
@@ -15,40 +13,44 @@ As we have found out from the textbook and lecture, when we measure things, we g
 
 Our general goals for this first lab are to get your feet wet, so to speak. We'll do these things:
 
-1. Load in some data to a statistical software program
-2. Talk a little bit about how the data is structured
-3. Make graphs of the data so we can look at it and make sense of it.
+1.  Load in some data to a statistical software program
+2.  Talk a little bit about how the data is structured
+3.  Make graphs of the data so we can look at it and make sense of it.
 
 ### Important info
 
-1. Data for NYC film permits was obtained from the NYC open data website. The .csv file can be found here: <a href="https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/Film_Permits.csv" download>Film_Permits.csv</a>
+1.  Data for NYC film permits was obtained from the NYC open data website. The .csv file can be found here: <a href="https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/Film_Permits.csv" download>Film_Permits.csv</a>
 
+2.  Gapminder data from the gapminder project (copied from the R gapminder library) can be downloaded in .csv format here: <a href="https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/gapminder.csv" download>gapminder.csv</a>
 
-2. Gapminder data from the gapminder project (copied from the R gapminder library) can be downloaded in .csv format here: <a href="https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/gapminder.csv" download>gapminder.csv</a>
+## R
 
+### Install R and R Studio 
 
-## R 
+1.  First, we need to [install R and R-studio](#0).
 
 ### Download the lab templates
 
-You will be completing each lab by writing your code and notes in an R Markdown document. 
+You will be completing each lab by writing your code and notes in an R Markdown document.
 
-1. Download the [RMarkdownsLab.zip](https://github.com/CrumpLab/statisticsLab/raw/master/RMarkdownsLab.zip) to your computer.
-2. Unzip the file, this will produce a new folder with three important parts
-    a. data folder (contains data files for all labs)
-    b. LabTemplates folder (contains blank templates for completing all the labs)
-    c. RMarkdownsLab.Rproj A file with a little blue cube with an R in it.
-3. Double-click the RMarkdownsLab.Rproj file, this will automatically open R-studio (if you are at home, you must [install R and R-studio first](https://crumplab.github.io/statisticsLab/software.html#installing-r-and-r-studio), or you can use [R-studio Cloud](https://crumplab.github.io/statisticsLab/software.html#r-studio-cloud) through your web-browser)
-4. Copy the template .Rmd file for lab 1 from the LabTemplates folder into the main folder, then open it, and use it to begin adding your code and notes for lab 1.
-5. Watch this screencast to help you get started.
+1.  Download the [RMarkdownsLab.zip](https://github.com/CrumpLab/statisticsLab/raw/master/RMarkdownsLab.zip) to your computer.
+2.  Unzip the file, this will produce a new folder with three important parts
+    a.  data folder (contains data files for all labs)
+    b.  LabTemplates folder (contains blank templates for completing all the labs)
+    c.  RMarkdownsLab.Rproj A file with a little blue cube with an R in it.
+3.  Double-click the RMarkdownsLab.Rproj file, this will automatically open R-studio
+4.  Copy the template .Rmd file for lab 1 from the LabTemplates folder into the main folder, then open it, and use it to begin adding your code and notes for lab 1.
+5.  Watch this screencast to help you get started.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/voMIi1fpe5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/voMIi1fpe5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+
+</iframe>
 
 Your lab instructor will show you how to open R-studio on the lab computer. Just find it and double-click. Now you have R-studio. Your lab instructor will also walk you through the steps to get started completing the first lab. We also wrote down the steps [here](https://crumplab.github.io/statisticsLab/software.html#how-to-complete-the-r-labs).
 
 There are numerous resources for learning about R, we put some of them on the course website, under the [resouces page](https://crumplab.github.io/psyc3400/Resources.html). You will find these resources helpful as you learn. We also have a kind of [general introduction to R and Rstudio here](https://crumplab.github.io/statisticsLab/software.html#r). This shows you how to download R and R-studio at home (it's free). Throughout the labs you will be writing things called R Markdown documents. You will learn how to do this throughout the labs, but it can also be worthwhile reading other tutorials, such as the one provided by [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html).
 
-When we made this course, we assumed that most students would be unfamiliar with R and R-studio, and might even be frightened of it, because it is a computer programming language (OOOOHHH NOOOOOOO, I NEED TO DROP THIS COURSE NOW)...Don't worry. It's going to be way easier than you think. Let's compare to other statistics courses where you would learn something like SPSS. That is also a limited programming language, but you would mostly learn how to point with a mouse, and click with button. I bet you already know how to do that. I bet you also already know how to copy and paste text, and press enter. That's mostly what we'll be doing to learn R. We will be doing statistics by typing commands, rather than by clicking buttons. However, lucky for you, all of the commands are already written for you. You just have to copy/paste them. 
+When we made this course, we assumed that most students would be unfamiliar with R and R-studio, and might even be frightened of it, because it is a computer programming language (OOOOHHH NOOOOOOO, I NEED TO DROP THIS COURSE NOW)...Don't worry. It's going to be way easier than you think. Let's compare to other statistics courses where you would learn something like SPSS. That is also a limited programming language, but you would mostly learn how to point with a mouse, and click with button. I bet you already know how to do that. I bet you also already know how to copy and paste text, and press enter. That's mostly what we'll be doing to learn R. We will be doing statistics by typing commands, rather than by clicking buttons. However, lucky for you, all of the commands are already written for you. You just have to copy/paste them.
 
 We know that this will seem challenging at first. But, we think that with lots of working examples, you will get the hang of it, and by the end of the course you will be able to do things you might never have dreamed you can do. It's really a fantastic skill to learn, even if you aren't planning on going on to do research in Psychology (in which case, this kind of thing is necessary skill to learn). With that, let's begin.
 
@@ -62,16 +64,16 @@ hist(rnorm(100, mean=50, sd=25))
 
 You just made R sample 100 numbers, and then plot the results in a histogram. Pretty neat. We'll be doing some of this later in the course, where get R to make fake data for us, and then we learn to think about how data behaves under different kinds of assumptions.
 
-For now, let's do something that might be a little bit more interesting...what movies are going to be filming in NYC? It turns out that NYC makes a lot of data about a lot things open and free for anyone to download and look at. This is the NYC Open Data website: [https://opendata.cityofnewyork.us](https://opendata.cityofnewyork.us). I searched through the data, and found a data file that lists the locations of film permits for shooting movies all throughout the Burroughs. There are multiple ways to load this data into R.
+For now, let's do something that might be a little bit more interesting...what movies are going to be filming in NYC? It turns out that NYC makes a lot of data about a lot things open and free for anyone to download and look at. This is the NYC Open Data website: <https://opendata.cityofnewyork.us>. I searched through the data, and found a data file that lists the locations of film permits for shooting movies all throughout the Burroughs. There are multiple ways to load this data into R.
 
-1. If you have downloaded the [RMarkdownsLab.zip](https://github.com/CrumpLab/statisticsLab/raw/master/RMarkdownsLab.zip) file, then you already have the data file in the data folder. Assuming you are working in your main directory (your .rmd file is saved in the main folder that contains both the data and template folders), then use the following commands to load the data.
+1.  If you have downloaded the [RMarkdownsLab.zip](https://github.com/CrumpLab/statisticsLab/raw/master/RMarkdownsLab.zip) file, then you already have the data file in the data folder. Assuming you are working in your main directory (your .rmd file is saved in the main folder that contains both the data and template folders), then use the following commands to load the data.
 
 ```{r}
 library(data.table)
 nyc_films <-fread("data/Film_Permits.csv")
 ```
 
-2. If the above method doesn't work, you can try loading the data from the course website using:
+2.  If the above method doesn't work, you can try loading the data from the course website using:
 
 ```{r, eval=F}
 library(data.table)
@@ -101,7 +103,7 @@ That is super helpful, but it's still a lot to look at. Because there is so much
 
 ### Make Plots to answer questions
 
-Let's walk through a couple questions we might have about this data. We can see that there were 50,728 film permits made. We can also see that there are different columns telling us information about each of the film permits. For example, the `Borough` column lists the Borough for each request, whether it was made for: Manhattan, Brooklyn, Bronx, Queen's, or Staten Island. Now we can ask our first question, and learn how to do some plotting in R. 
+Let's walk through a couple questions we might have about this data. We can see that there were 50,728 film permits made. We can also see that there are different columns telling us information about each of the film permits. For example, the `Borough` column lists the Borough for each request, whether it was made for: Manhattan, Brooklyn, Bronx, Queen's, or Staten Island. Now we can ask our first question, and learn how to do some plotting in R.
 
 #### Where are the most film permits being requested?
 
@@ -132,8 +134,7 @@ ggplot(counts, aes(x = Borough, y = count_of_permits )) +
 
 ```
 
-
-There it is, we're done here! We can easily look at this graph, and answer our question. Most of the film permits were requested in Manhattan, followed by Brooklyn, then Queen's, the Bronx, and finally Staten Island. 
+There it is, we're done here! We can easily look at this graph, and answer our question. Most of the film permits were requested in Manhattan, followed by Brooklyn, then Queen's, the Bronx, and finally Staten Island.
 
 #### What kind of "films" are being made, what is the category?
 
@@ -151,16 +152,15 @@ ggplot(counts, aes(x = Category, y = count_of_permits )) +
 
 ```
 
-OK, so this figure might look a bit weird because the labels on the bottom are running into each other. We'll fix that in a bit. First, let's notice the changes. 
+OK, so this figure might look a bit weird because the labels on the bottom are running into each other. We'll fix that in a bit. First, let's notice the changes.
 
-1. I changed `Borough` to `Category`. That was the main thing
+1.  I changed `Borough` to `Category`. That was the main thing
 
-2. I left out a bunch of things from before. None of the `library()` commands are used again, and I didn't re-run the very early code to get the data. R already has those things in it's memory, so we don't need to do that first. If you ever clear the memory of R, then you will need to reload those things. First-things come first.
+2.  I left out a bunch of things from before. None of the `library()` commands are used again, and I didn't re-run the very early code to get the data. R already has those things in it's memory, so we don't need to do that first. If you ever clear the memory of R, then you will need to reload those things. First-things come first.
 
 Fine, so how do we fix the graph? Good question. To be honest, I don't know right now. I totally forgot how. But, I know ggplot2 can do this, and I'm going to Google it, right now. Then I'm going to find the answer, and use it here. The googling of your questions is a fine way to learn. It's what everybody does these days....[goes to Google...].
 
 Found it, actually found a lot of ways to do this. The trick is to add the last line. I just copy-pasted it from the solution I found on [stack overflow](https://stackoverflow.com/questions/1330989/rotating-and-spacing-axis-labels-in-ggplot2) (you will become friend's with stack overflow, there are many solutions there to all of your questions)
-
 
 ```{r 1categoryB}
 
@@ -182,12 +182,11 @@ The ggplot function uses layers. Layers you say? What are these layers? Well, it
 
 Here is a way of thinking about ggplot code
 
-```
+```         
 ggplot(name_of_data, aes(x = name_of_x_variable, y = name_of_y_variable)) +
     geom_layer()+
     geom_layer()+
     geom_layer()
-
 ```
 
 What I want you to focus on in the above description is the $+$ signs. What we are doing with the plus signs is adding layers to plot. The layers get added in the order that they are written. If you look back to our previous code, you will see we add a `geom_bar` layer, then we added another layer to change the rotation of the words on the x-axis. This is how it works.
@@ -219,7 +218,6 @@ ggplot(counts, aes(x = Category, y = count_of_permits )) +
   xlab("Category of film")
 ```
 
-
 #### ggtitle() adds title
 
 Let's give our graph a title
@@ -248,7 +246,7 @@ ggplot(counts, aes(x = Category, y = count_of_permits, color=Category )) +
 
 #### fill fills in color
 
-Let's make the bars different colors. To do this, we add new code to the inside of the `aes()` part...Notice I've started using new lines to make the code more readable. 
+Let's make the bars different colors. To do this, we add new code to the inside of the `aes()` part...Notice I've started using new lines to make the code more readable.
 
 ```{r 1categoryG}
 ggplot(counts, aes(x = Category, y = count_of_permits, 
@@ -263,7 +261,7 @@ ggplot(counts, aes(x = Category, y = count_of_permits,
 
 #### get rid of the legend
 
-Sometimes you just don't want the legend on the side, to remove it add 
+Sometimes you just don't want the legend on the side, to remove it add
 
 `theme(legend.position="none")`
 
@@ -333,6 +331,7 @@ ggplot(counts, aes(x = Category, y = count_of_permits,
   
 
 ```
+
 or make things small... just to see what happens
 
 ```{r 1categoryL}
@@ -357,7 +356,7 @@ That's enough of the ggplot2 basics for now. You will discover that many things 
 ### More questions about NYC films
 
 #### What are the sub-categories of films?
- 
+
 Notice the `nyc_films` data frame also has a column for `SubCategoryName`. Let's see what's going on there with a quick plot.
 
 ```{r 1subcategory}
@@ -387,7 +386,7 @@ I guess "episodic series" are the most common. Using a graph like this gave us o
 
 #### Categories by different Boroughs
 
-Let's see one more really useful thing about ggplot2. It's called `facet_wrap()`. It's an ugly word, but you will see that it is very cool, and you can do next-level-super-hero graph styles with `facet_wrap` that other people can't do very easily. 
+Let's see one more really useful thing about ggplot2. It's called `facet_wrap()`. It's an ugly word, but you will see that it is very cool, and you can do next-level-super-hero graph styles with `facet_wrap` that other people can't do very easily.
 
 Here's our question. We know that some films are made in different Boroughs, and that same films are made in different categories, but do different Boroughs have different patterns for the kinds of categories of films they request permits for? Are their more TV shows in Brooklyn? How do we find out? Watch, just like this:
 
@@ -419,7 +418,6 @@ We did two important things. First we added `Borough` and `Category` into the `g
 
 The nice thing about this is we can switch things around if we want. For example, we could do it this way by switching the `Category` with `Borough`, and facet-wrapping by Category instead of Borough like we did above. Do what works for you.
 
-
 ```{r 1facetwrap2}
 ggplot(counts, aes(x = Borough, y = count_of_permits, 
                    color=Borough, 
@@ -437,7 +435,7 @@ ggplot(counts, aes(x = Borough, y = count_of_permits,
 
 ### Gapminder Data
 
-[https://www.gapminder.org](https://www.gapminder.org) is an organization that collects some really interesting worldwide data. They also make cool visualization tools for looking at the data. There are many neat examples, and they have visualization tools built right into their website that you can play around with [https://www.gapminder.org/tools/](https://www.gapminder.org/tools/). That's fun check it out.
+<https://www.gapminder.org> is an organization that collects some really interesting worldwide data. They also make cool visualization tools for looking at the data. There are many neat examples, and they have visualization tools built right into their website that you can play around with <https://www.gapminder.org/tools/>. That's fun check it out.
 
 There is also an R package called `gapminder`. When you install this package, it loads in some of the data from gapminder, so we can play with it in R.
 
@@ -522,7 +520,7 @@ Whoa, that's a lot of dots! Remember that each country is measured each year. So
 
 #### One country, life expectancy by year
 
-I'm (Matt) from Canada, so maybe I want to know if life expectancy for Canadians is going up over the years. To find out the answer for one country, we first need to split the full data set, into another smaller data set that only contains data for Canada. In other words, we want only the rows where the word "Canada" is found in the `country` column. We will use the `filter` function from `dplyr` for this:
+Let's say I'm from Canada, so maybe I want to know if life expectancy for Canadians is going up over the years. To find out the answer for one country, we first need to split the full data set, into another smaller data set that only contains data for Canada. In other words, we want only the rows where the word "Canada" is found in the `country` column. We will use the `filter` function from `dplyr` for this:
 
 ```{r 1scatterB}
 # filter rows to contain Canada
@@ -594,11 +592,11 @@ The following generalization exercise and writing assignment is also in your lab
 
 Use the code from above to attempt to solve the extra things we ask you do for this assignment. You generalization exercises are as follows:
 
-1. Make a graph plotting Life Expectancy by year for the five continents, using the `continent` factor. Make sure you change the title so it reads correctly
+1.  Make a graph plotting Life Expectancy by year for the five continents, using the `continent` factor. Make sure you change the title so it reads correctly
 
-2. Make a graph plotting GDP per capita by year for the USA, Canada, and Mexico. Use the `gdpPercap` column for the GDP per capita data
+2.  Make a graph plotting GDP per capita by year for the USA, Canada, and Mexico. Use the `gdpPercap` column for the GDP per capita data
 
-3. Make a new graph plotting anything you are interested in using the gapminder dataset. It just needs to be a plot that we have not given an example for
+3.  Make a new graph plotting anything you are interested in using the gapminder dataset. It just needs to be a plot that we have not given an example for
 
 ### Writing assignment
 
@@ -610,186 +608,20 @@ Describe what histograms are, how to interpret them, and what they are useful fo
 
 The answers to each of these questions are worth .25 points each, for a total of 2 points
 
-a. What do the bars on a histogram represent?
-b. How many bars can a histogram have?
-c. What do the heights of the bars tell you
-d. What is on the x-axis and y-axis of a histogram
-e. What does the tallest bar on a histogram tell you?
-f. What does the shortest bar on a histogram tell you?
-g. What are some uses for histograms, why would you want to look at a histogram of some numbers that you collected?
-h. Imagine you had two histograms, one was very wide and spread out, the other was very narrow with a very tall peak. Which histogram would you expect to contain more consistent numbers (numbers that are close to each other), explain why.
+a.  What do the bars on a histogram represent?
+b.  How many bars can a histogram have?
+c.  What do the heights of the bars tell you
+d.  What is on the x-axis and y-axis of a histogram
+e.  What does the tallest bar on a histogram tell you?
+f.  What does the shortest bar on a histogram tell you?
+g.  What are some uses for histograms, why would you want to look at a histogram of some numbers that you collected?
+h.  Imagine you had two histograms, one was very wide and spread out, the other was very narrow with a very tall peak. Which histogram would you expect to contain more consistent numbers (numbers that are close to each other), explain why.
 
 **Rubric**
 
-General grading. 
-
-- You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 out .25 points for that question)
-- You must write in complete sentences. Point form sentences will be given 0 points.
-- Completely incorrect answers will receive 0 points. For example, if you incorrectly describe what the x and y-axes refer to, then you will receive 0 points for that question.
-- If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question
-
-
-
-
-## Excel
-
-## SPSS
-
-
-In this lab, we will get you acquainted with the SPSS software layout and graph some sample data to make sense of it. We will be doing the following:
-
-1. Opening SPSS and the SPSS layout 
-2. Reviewing variable properties and the Variable View tab
-3. Opening a data file and producing different types of graphs
-
-### Opening SPSS and the SPSS layout
-
----
-
-Your lab instructor will take you through the process of opening the SPSS program. You may double-click on its icon located on the desktop of your lab computer, or you may find it using the Start menu. Once the program loads,  you will be prompted with a pop-up window that asks you which file you would like to open. For now, we will be examining the basic layout of SPSS without a data set, so you can click <span style="color:blue">Cancel</span>. 
-
-Once you do, the main SPSS spreadsheet should open. It will look like this, a basic spreadsheet:
-
-```{r , fig.cap="Empty SPSS spreadsheet", echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.11.png')
-```
-Notice at the bottom of your window there are two tabs; "Data View" and "Variable View". In data view, we enter data into our spreadsheet. You will notice that rows are numbered on the left-hand side of the spreadsheet, while columns are labeled "var". This is an indication of the general structure of SPSS: Variables are contained in the columns, and rows indicate individual observations.  For example, if you obtained the heights (in inches) of 5 people {x= 64, 70, 63, 62, 65} and wanted to enter their data into SPSS, each person's height would be entered in a new row, not across the columns, as seen below:
-
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.12.png')
-```
-
-### Reviewing variable properties and the Variable View tab
-
----
-
-Now that we have some data entered, we might want to name our variable so that it's evident our measurements represent heights. In order o view or modify variable names and other properties, look to the bottom of your SPSS window and switch over to the "Data View" tab. Once you do this, your window will appear as follows:
-
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.13.png')
-```
-
-Here, you can edit the name of your variables, and specify their properties. Variable names can be anything you like, with the restriction that you cannot use numbers or spaces. Next, notice several other important properties of variables you may at some point need to set or modify:
-
-+ Name: the name of your variable that will appear as a colum header in Data View. No spaces or numerals.
-+ Type: Your data will most often be Numeric, but sometimes, as in data representing currency or data in scientific notation, you may change the data type appropriately. If your data is simply a label, word, or response (such as an open-ended response to a survey question), choose "String": this tells SPSS not to treat this variable as a number. (Nota bene: if you select the wrong type of variable, SPSS may not be able to process your requested calculations, so always remember to check this parameter!)
-+ Width: This refers to how many digits will be visible by default.
-+ Decimals: This refers to how many decimal places will be visible by default.
-+ Label: This is a description of the variable. Any information too long to be included in the variable name goes here.
-+ Values: For nominal scale data, let's say 1 represents male and 2 represents female, this is where you include the values and their corresponding labels. 
-+ Measure: This variable property allows you to specify the nature of your data. Depending on the kind of scale you are using, you will choose a different measure type. Nominal and ordinal are chosen for nominal and ordinal scales, respectively. "Scale" is used when your data is measured on a ratio or interval scale. (Nota bene: this "Measure" designation is only a marker; it does not affect the calculations as in the "Type" parameter. Even if you choose the wrong icon/label for "Measure", SPSS will still produce the correct output)
-
-### Opening a data file and producing different types of graphs
-
----
-
-
-Now that we know about the properties of the SPSS spreadsheet window, let's open a data file and learn how to make some sense of it by creating different types of graphs. [Here](https://github.com/CrumpLab/statisticsLab/blob/master/data/spssdata/nyc_films.sav) is a link to an SPSS-based data file containing information about film permits (requests made by film companies to shoot TV shows and movies on location) filed in New York City. The file is named nyc_films.sav.
-
-Once you open the data file, browse through to familiarize yourself with the variables that are being measured. Switch over to Variable View for details of each variable. 
-
-#### Bar Graphs
-
----
-
-
-Now, back to Data View. We will not be working with every single variable in this spreadsheet, but we'll select a few interesting ones with which to answer questions. Let's start with `borough`. Suppose we wanted to know which borough receives the most film permits (you can probably guess which one is most popular). Let's use SPSS to produce a graph to answer this question. With your data file open, go up to the top menu and choose <span style="color:blue">Graphs</span>, then <span style="color:blue">Legacy Dialogs</span>. You will see an entire list of possible graphs we can use to plot our data. 
-
-Let's think about the nature of our question: we would like to know how many permits were filed for each borough. Borough is simply a label or a name for a region, and we want to know the frequency of permits for each borough. This is a nominal scale variable and so, we will appropriately choose a BAR graph to plot it. Select <span style="color:blue">Bar...</span>
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.14.png')
-```
-
-The next window will ask you to specify what kind of graph you would like. Select <span style="color:blue">Simple</span> and then <span style="color:blue">Define</span>. 
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.15.png')
-```
-The following window will ask which variable you'd like to plot. Select `borough` from the left-hand list and use the arrow to move it into the field labeled "Category Axis". Then click <span style="color:blue">OK</span>. 
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.16.png')
-```
-
-SPSS will produce a new output window which will contain the bar graph you have generated. Notice which borough receives the most film permits. Are you surprised?
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.17.png')
-```
-
-#### Histograms
-
----
-
-
-Now, let's use a different data set to plot a histogram. The defining difference between a histogram and a bar graph (although they look very similar as they both utilize bars) is that a histogram is used to display a continuous variable (interval or ratio scale). In the previous example, boroughs were simply labels or names, so we used a nominal scale and therefore a bar graph. Here, we will deal with life expectancy (measured in years), an interval scale measure. [Here](https://github.com/CrumpLab/statisticsLab/blob/master/data/spssdata/life_expectancy.sav) is a link to the SPSS data file, life_expectancy.sav. Open this file and examine its rows and columns. Each column represents a year during which life expectancy was measured. Each row represents a different country. 
-
-Let's first get an idea about life expectancy in general. We want to plot a histogram with life expectancy on the x-axis and frequency on the y-axis. Choose <span style="color:blue">Graphs</span> in the top menu, then <span style="color:blue">Legacy Dialogs</span>. From here, remember we want a histogram, not a bar graph, so let's select <span style="color:blue">Histogram...</span>. 
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.18.png')
-```
-
-The window that appears contains every variable in your spreadsheet listed on the left-hand side. We can choose one variable at a time to plot. Let's scroll all the way down the list and choose `2017 [v219]`. This is the variable containing life expectancies for the year 2017. Using the arrow, move that variable into the field labeled "Variable:", then click <span style="color:blue">OK</span>.
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.19.png')
-```
-
-SPSS will produce an output window containing the distribution of life expectancy for the year 2017.
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.20.png')
-```
-
-#### Scatterplots
-
----
-
-
-Now, we will look to a different type of data plot; the scatterplot. A scatterplot allows us to visualize bivariate data, that is, data for which there are two measurements per individual. For example, we may ask whether life expectancy in a country (or how long you live, on average) is related to the average income. Using the life_expectancy.sav data file, let's plot both variables: `2017 [v219]` and `income`. The income variable in the spreadsheet refers to data collected in 2017 by the Better Life Initiative. Notice not all the countries listed have estimates for average annual income. For those that do, this value represents household net adjusted income (annual) in US dollars. 
-
-To create the scatterplot, let's go to <span style="color:blue">Graphs</span> in the menu toolbar, then <span style="color:blue">Legacy Dialogs</span>, then <span style="color:blue">Scatter</span>. 
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.21.png')
-```
-
-You will choose <span style="color:blue">Simple</span> scatter, then click <span style="color:blue">Define</span>.
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.22.png')
-```
-
-Next, indicate which variables (there are 2 this time!) you would like in the x- and y-axes. Use the arrows to place `income` in the x-axis field, and `2017 (V219)` in the y-axis field. (For the purposes of graphing a scatterplot, it does not matter which variable goes into the y-axis and x-axis fields for now; you can reverse them if you'd like and you can still interpret the data similarly)
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.23.png')
-```
-
-Then click <span style="color:blue">OK</span>. 
-SPSS will produce output containing a scatterplot. What relationship do you notice? What happens to life expectancy the more individuals earn, on average?
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/1.4.24.png')
-```
-
-
-
-### Practice Problems
-
-___
-
-
-1. Create a histogram for life expectancy in the year 1800. Describe the distribution. How does it differ from the one we plotted for 2017?
-
-2. Plot the life expectancy of each country in 1800 vs. that of 2018. What does this graph show you? What are your conclusions regarding the development of nations?
-
-
-## JAMOVI
-
-
-  
-
-
+General grading.
+
+-   You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 out .25 points for that question)
+-   You must write in complete sentences. Point form sentences will be given 0 points.
+-   Completely incorrect answers will receive 0 points. For example, if you incorrectly describe what the x and y-axes refer to, then you will receive 0 points for that question.
+-   If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question

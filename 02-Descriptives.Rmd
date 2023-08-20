@@ -1,27 +1,23 @@
 # Lab 2: Descriptive Statistics
 
+```{=html}
 <script>
 $("#coverpic").hide();
 </script>
+```
+[ Describing comic sensibility is near impossible. It's sort of an abstract silliness, that sometimes the joke isn't the star. ---Dana Carvey ]{.newthought}
 
-<span class="newthought">
-Describing comic sensibility is near impossible. It's sort of an abstract silliness, that sometimes the joke isn't the star.
----Dana Carvey
-</span>
-
-The purpose of this lab is to show you how to compute basic descriptive statistics, including measures of central tendency (mean, mode, median) and variation (range, variance, standard deviation). 
+The purpose of this lab is to show you how to compute basic descriptive statistics, including measures of central tendency (mean, mode, median) and variation (range, variance, standard deviation).
 
 ## General Goals
 
-1. Compute measures of central tendency using software
-2. Compute measures of variation using software
-3. Ask some questions of a data set using descriptive statistics
+1.  Compute measures of central tendency using software
+2.  Compute measures of variation using software
+3.  Ask some questions of a data set using descriptive statistics
 
 ### Important info
 
 We will be using data from the gapminder project. You can download a small snippet of the data in .csv format from this link (note this dataset was copied from the gapminder library for R) <a href="https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/gapminder.csv" download>gapminder.csv</a>. If you are using R, then you can install the gapminder package. This method is described later in the R section.
-
-
 
 ## R
 
@@ -62,7 +58,7 @@ sum(one_to_one_hundred)
 
 #### Length
 
-We put 100 numbers into the variable `one_to_one_hundred`. We know how many numbers there are in there. How can we get R to tell us? We use `length()` for that. 
+We put 100 numbers into the variable `one_to_one_hundred`. We know how many numbers there are in there. How can we get R to tell us? We use `length()` for that.
 
 ```{r}
 length(one_to_one_hundred)
@@ -172,7 +168,7 @@ sd(sample_numbers)
 
 ### Descriptives by conditions
 
-Sometimes you will have a single variable with some numbers, and you can use the above functions to find the descriptives for that variable. Other times (most often in this course), you will have a big data frame of numbers, with different numbers in different conditions. You will want to find descriptive statistics for each the sets of numbers inside each of the conditions. Fortunately, this is where R really shines, it does it all for you in one go. 
+Sometimes you will have a single variable with some numbers, and you can use the above functions to find the descriptives for that variable. Other times (most often in this course), you will have a big data frame of numbers, with different numbers in different conditions. You will want to find descriptive statistics for each the sets of numbers inside each of the conditions. Fortunately, this is where R really shines, it does it all for you in one go.
 
 Let's illustrate the problem. Here I make a date frame with 10 numbers in each condition. There are 10 conditions, each labelled, A, B, C, D, E, F, G, H, I, J.
 
@@ -209,7 +205,6 @@ my_df %>%
 ```
 
 A couple things now. First, the print out of this was ugly. Let's fix that. we put the results of our code into a new variable, then we use `knitr::kable` to print it out nicely when we `knit` the document
-
 
 ```{r}
 
@@ -253,14 +248,14 @@ knitr::kable(summary_df)
 
 ### Describing gapminder
 
-Now that we know how to get descriptive statistics from R, we cam do this will some real data. Let's quickly ask a few question about the gapminder data. 
+Now that we know how to get descriptive statistics from R, we cam do this will some real data. Let's quickly ask a few question about the gapminder data.
 
 ```{r}
 library(gapminder)
 gapminder_df <- gapminder
 ```
 
-Note: The above code will only work if you have installed the gapminder package. Make sure you are connected to the internet, then choose the Packages tab from the bottom right panel, and choose install. Thens search for gapminder, choose it, and install it. 
+Note: The above code will only work if you have installed the gapminder package. Make sure you are connected to the internet, then choose the Packages tab from the bottom right panel, and choose install. Thens search for gapminder, choose it, and install it.
 
 #### What are some descriptive for Life expectancy by continent?
 
@@ -285,9 +280,9 @@ knitr::kable(summary_df)
 
 Complete the generalization exercise described in your R Markdown document for this lab.
 
-1. What is the mean, standard deviation, minimum and maximum life expectancy for all the gapminder data (across all the years and countries). Hint: do not use `group_by`
+1.  What is the mean, standard deviation, minimum and maximum life expectancy for all the gapminder data (across all the years and countries). Hint: do not use `group_by`
 
-2. What is the mean, standard deviation, minimum and maximum life expectancy for all of the continents in 2007, the most recent year in the dataset. Hint: add another pipe using `filter(year==2007) %>%`
+2.  What is the mean, standard deviation, minimum and maximum life expectancy for all of the continents in 2007, the most recent year in the dataset. Hint: add another pipe using `filter(year==2007) %>%`
 
 ### Writing assignment
 
@@ -297,184 +292,30 @@ Complete the writing assignment described in your R Markdown document for this l
 
 Your writing assignment is to answer these questions in full sentences using simple plain langauge:
 
-1. Define the mode.
-2. Explain what would need to happen in order for a set of numbers to have two modes
-3. Define the median
-4. Define the mean
-5. Define the range
-6. When calculating the standard deviation, explain what the difference scores represent
-7. Explain why the difference scores are squared when calculating the standard deviation
-8. If one set of numbers had a standard deviation of 5, and another had a standard deviation of 10, which set of numbers would have greater variance, explain why.
+1.  Define the mode.
+2.  Explain what would need to happen in order for a set of numbers to have two modes
+3.  Define the median
+4.  Define the mean
+5.  Define the range
+6.  When calculating the standard deviation, explain what the difference scores represent
+7.  Explain why the difference scores are squared when calculating the standard deviation
+8.  If one set of numbers had a standard deviation of 5, and another had a standard deviation of 10, which set of numbers would have greater variance, explain why.
 
 **Rubric**
 
-General grading. 
+General grading.
 
-- You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 out .25 points for that question)
-- You must write in complete sentences. Point form sentences will be given 0 points.
-- Completely incorrect answers will receive 0 points. 
-- If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question
-
-
-## Excel
-
-How to do it in Excel
-
-## SPSS
-
-In this lab, we will use SPSS to calculate a variety of descriptive statistics. SPSS allows us to specify which statistics we would like calculated and produce them all in one output table. Here, we will learn to:
-
-1. Calculate descriptive statistics
-2. Graph data using a histogram
-3. Editing graphs
-
-Let's begin with a short data set {x= 1, 1, 4, 1, 2, 5, 7}
-
-Suppose we want to calculate the measures of central tendency (mean, median, and mode) as well as variability (range, standard deviation, and variance). First, we will have to enter our data into the SPSS spreadsheet. There are 7 measurements, so we will need 7 rows of data (I have also changed the name of this variable in Variable View to `x`:
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.11.png')
-```
-
-### Calculating Descriptive Statistics
-
----
-
-From here, go to the top menu and choose <span style="color:blue">Analyze</span>, then <span style="color:blue">Descriptive Statistics</span> and then <span style="color:blue">Frequencies</span>:
-
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.12.png')
-```
-
-A new window will ask you to specify for which variables you want descriptives statistics calculated. Use the arrow to move the `x` variable from the left-hand to the right-hand field. 
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.13.png')
-```
-
-Now, click the <span style="color:blue">Statistics</span> button. This will open a new window containing a list of statistics. You can choose as many as you want to be calculated. We will choose <span style="color:blue">mean, median mode, range, standard deviation, and variance</span>. 
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.14.png')
-```
-
-
-Then click <span style="color:blue">Continue</span>, and then <span style="color:blue">OK</span>. SPSS will produce a set of two output tables: one containing the descriptive statistics we have chosen, and the other a frequency table--a list of all the possible values in our data set and their corresponding frequencies.
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.15.png')
-```
-
-### Descriptive Statistics and Histograms
-
----
-
-
-Now let's use a real dataset to calculate the same measures of central tendency and variability as in the last example, but with the addition of a histogram to visualize a distribution to relate back to the descriptive statistics. [Here](https://github.com/CrumpLab/statisticsLab/blob/master/data/spssdata/life_expectancy.sav) is a link to the life expectancy dataset we used for our graphing tutorial. It is named life_expectancy.sav. 
-
-Suppose we wanted to know about life expectancy (around the world) in 2018. This will include calculating descriptive statistics, as well as graphing a histogram to examine the distribution of our data. SPSS often has neat shortcuts to graph data within other menu options. For example, in the process of asking SPSS to produce a table of descriptive statistics, we can also add a histogram to the output without having to go to the Graphs menu. 
-
-First, we go to <span style="color:blue">Analyze</span>, then <span style="color:blue">Descriptive Statistics</span>, then <span style="color:blue">Frequencies</span>.
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.16.png')
-```
-
-A window will appear asking us to indicate which variable to use. We will scroll all the way down in the list of variables on the left, choose `2018 [V220]`, and then move it into the field on the right using the arrow. 
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.17.png')
-```
-
-As in the previous example, we will click the <span style="color:blue">Statistics</span> button next, and choose our measures of central tendency <span style="color:blue">(mean, median, mode)</span> as well as variability <span style="color:blue">(range, standard deviation, variance)</span>. 
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.18.png')
-```
-
-Once we click continue, we are back to the previous window. Here, we can conveniently ask SPSS to insert a histogram. Let's click on the <span style="color:blue">Charts</span> button:
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.19.png')
-```
-
-This will open a new window that asks us to specify the type of chart we would like. Let's select <span style="color:blue">Histogram</span>, and check off <span style="color:blue">Show normal curve on histogram</span>:
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.20.png')
-```
-
-Click <span style="color:blue">Continue</span>, and then <span style="color:blue">OK</span>.
-
-SPSS will produce a table of the requested descriptive statistics, a frequency table (we will ignore this for now because it is long and not relevant to this exercise), and finally, a histogram showing the distribution of life expectancy (in years) with a normal distribution superimposed for comparison. 
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.21.png')
-```
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.22.png')
-```
-
-Something to think about: What do the mean, median, and mode indicate about the shape of the distribution? Is it confirmed when we look at the histogram? How does the shape of this distribution compare to the symmetrical normal distribution which is superimposed over it? 
-
-### Editing graphs
-
----
-
-For future reference, we will take this opportunity to make edits to the appearance of this graph. It is helpful to know how to manipulate not just the superficial, cosmetic appearance of data visualizations, but also the components of graphs that communicate important information. One feature to consider is the scale of our axes. 
-
-To modify the scale in a graph, first <span style="color:blue">double-click</span> on the graph itself in the output window. A Chart Editor should pop up. 
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.23.png')
-```
-
-Now, hover your mouse over one of the values on the x-axis, and click down once. You will see all the x-axis values suddenly highlight:
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.24.png')
-```
-
-Now that you know how to select the entire axis, <span style="color:blue">double click</span> on it. A properties window will pop up:
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.25.png')
-```
-
-Notice that in the default tab, you can change the fill color of components of your graph. For now, we will select the <span style="color:blue">Scale</span> tab instead:
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.26.png')
-```
-
-Notice in this tab, we can change the minimum, maximum, and increments of our scale. Lets change the major increment to 5:
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.27.png')
-```
-
-
-Click <span style="color:blue">Apply</span>. Then <span style="color:blue">Close</span>. Now, close your Chart Editor window by simply <span style="color:blue">x</span>-ing it out. The SPSS output window will now contain your edited graph:
-
-```{r , echo=FALSE,dev='png'}
-knitr::include_graphics('img/2.4.28.png')
-```
-
-
+-   You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 out .25 points for that question)
+-   You must write in complete sentences. Point form sentences will be given 0 points.
+-   Completely incorrect answers will receive 0 points.
+-   If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question
 
 ### Practice Problems
 
-___
+------------------------------------------------------------------------
 
+1.  Using the life expectancy data set, produce a table of output showing the descriptive statistics (measures of central tendency and variability) for both years 1800 and 1934 (during the Great Depression).
 
-1. Using the life expectancy data set, produce a table of output showing the descriptive statistics (measures of central tendency and variability) for both years 1800 and 1934 (during the Great Depression). 
+2.  Plot histograms of life expectancy for both years. How are these distributions different? (Hint: Plot these on the same axes so that they are comparable).
 
-2. Plot histograms of life expectancy for both years. How are these distributions different? (Hint: Plot these on the same axes so that they are comparable).
-
-## JAMOVI
-
-How to do it in JAMOVI
-
-
+## 
