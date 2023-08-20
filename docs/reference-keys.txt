@@ -368,3 +368,4 @@ conduct-a-mixed-factorial-analysis-of-variance-anova
 calculate-simple-effects-2
 practice-problems-9
 jamovi-10
+fig:2rstudiod

@@ -13,9 +13,10 @@ As we have found out from the textbook and lecture, when we measure things, we g
 
 Our general goals for this first lab are to get your feet wet, so to speak. We'll do these things:
 
-1.  Load in some data to a statistical software program
-2.  Talk a little bit about how the data is structured
-3.  Make graphs of the data so we can look at it and make sense of it.
+1.  Downlaod the statistical software program R and the RStudio (Integrated Development Environment for R) on your personal computers
+2.  Load in some data to a statistical software program
+3.  Talk a little bit about how the data is structured
+4.  Make graphs of the data so we can look at it and make sense of it.
 
 ### Important info
 
@@ -27,7 +28,15 @@ Our general goals for this first lab are to get your feet wet, so to speak. We'l
 
 ### Install R and R Studio 
 
-1.  First, we need to [install R and R-studio](#0).
+First, we need to [install R and R-studio](#0). Download and install R onto your computer. The R website is: <http://www.r-project.org>
+
+Find the download R using the link. This will take you to a page with many different mirror links. You can click any of these links to download a version of R that will work on your computer. After you have installed R you can continue.
+
+After you have installed R on your computer, you should want to install another program called R studio. This program provides a user-friendly interface for using R. You must already have installed R before you perform this step. The R-studio website is: <http://www.rstudio.com>
+
+Find the download link on the front-page, and then download R studio desktop version for your computer. After you have installed R studio you will be ready to start using R.
+
+The website [R-fiddle](http://www.r-fiddle.org) allows you to run R scripts in the cloud, so you can practice R from your web-browser!
 
 ### Download the lab templates
 
@@ -46,7 +55,7 @@ You will be completing each lab by writing your code and notes in an R Markdown 
 
 </iframe>
 
-Your lab instructor will show you how to open R-studio on the lab computer. Just find it and double-click. Now you have R-studio. Your lab instructor will also walk you through the steps to get started completing the first lab. We also wrote down the steps [here](https://crumplab.github.io/statisticsLab/software.html#how-to-complete-the-r-labs).
+One you've downloaded R-studio on your computer, you'll Just need to find it and double-click. Now you have R-studio. Your lab instructor will also walk you through the steps to get started completing the first lab. We also wrote down the steps [here](https://crumplab.github.io/statisticsLab/software.html#how-to-complete-the-r-labs).
 
 There are numerous resources for learning about R, we put some of them on the course website, under the [resouces page](https://crumplab.github.io/psyc3400/Resources.html). You will find these resources helpful as you learn. We also have a kind of [general introduction to R and Rstudio here](https://crumplab.github.io/statisticsLab/software.html#r). This shows you how to download R and R-studio at home (it's free). Throughout the labs you will be writing things called R Markdown documents. You will learn how to do this throughout the labs, but it can also be worthwhile reading other tutorials, such as the one provided by [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html).
 
