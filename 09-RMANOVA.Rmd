@@ -5,7 +5,7 @@
 $("#coverpic").hide();
 </script>
 ```
-[ However, perhaps the main point is that you are under no obligation to analyse variance into its parts if it does not come apart easily, and its unwillingness to do so naturally indicates that one's line of approach is not very fruitful. ---R. A. Fisher ]{.newthought}
+[However, perhaps the main point is that you are under no obligation to analyse variance into its parts if it does not come apart easily, and its unwillingness to do so naturally indicates that one's line of approach is not very fruitful. ---R. A. Fisher]{.newthought}
 
 ## Betcha can't type JHDBZKCO very fast on your first try
 

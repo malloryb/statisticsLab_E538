@@ -5,7 +5,7 @@
 $("#coverpic").hide();
 </script>
 ```
-[ The analysis of variance is not a mathematical theorem, but rather a convenient method of arranging the arithmetic. ---R. A. Fisher ]{.newthought}
+[The analysis of variance is not a mathematical theorem, but rather a convenient method of arranging the arithmetic. ---R. A. Fisher]{.newthought}
 
 ::: marginnote
 This lab is modified and extended from [Open Stats Labs](https://sites.trinity.edu/osl). Thanks to Open Stats Labs (Dr. Kevin P. McIntyre) for their fantastic work.

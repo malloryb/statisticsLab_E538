@@ -5,7 +5,7 @@
 $("#coverpic").hide();
 </script>
 ```
-[ I think he [Gosset] was really the big influence in statistics... he asked the questions and Pearson and Fisher put them into statistical language, and then Neyman came to work with the mathematics. But I think most of it came from Gosset. ---F. N. David ]{.newthought}
+[I think he [Gosset] was really the big influence in statistics... he asked the questions and Pearson and Fisher put them into statistical language, and then Neyman came to work with the mathematics. But I think most of it came from Gosset. ---F. N. David]{.newthought}
 
 ::: marginnote
 This lab is modified and extended from [Open Stats Labs](https://sites.trinity.edu/osl). Thanks to Open Stats Labs (Dr. Kevin P. McIntyre) for their fantastic work.
@@ -239,9 +239,8 @@ Complete the writing assignment described in your R Markdown document for this l
 
 1.  Answer the following questions
 
-```{=html}
 <!-- -->
-```
+
 a.  Explain the difference between a paired-samples t-test and an independent samples t-test. ( 1 point )
 
 b.  Imagine you were to conduct a between-subjects experiment with two groups, where the manipulation had no effect whatsoever. If you repeated this experiment (that doesn't work) 100 times and computed a t-test each time, approximately how many of the experiments out of 100 would you expect find the associated p-value is .05 or smaller? Explain (1 point)
