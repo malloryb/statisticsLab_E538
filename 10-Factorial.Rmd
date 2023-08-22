@@ -11,9 +11,9 @@ editor_options:
 $("#coverpic").hide();
 </script>
 ```
-[ Simplicity is complex. It's never simple to keep things simple. Simple
-solutions require the most advanced thinking. ---Richie Norton
-]{.newthought}
+[Simplicity is complex. It's never simple to keep things simple. Simple
+solutions require the most advanced thinking. ---Richie
+Norton]{.newthought}
 
 ## Does standing up make you focus more?
 
@@ -655,7 +655,7 @@ Below is fictitious data representing the number of milliimeters a plant
 has grown under several water/sunlight combinations:
 
 | Water & Sunlight | NoWater & Sunlight | Water & NoSunlight | NoWater & NoSunlight |
-|------------------|------------------|------------------|------------------|
+|------------------|--------------------|--------------------|----------------------|
 | 1.2              | 2.4                | 3.1                | 2.5                  |
 | 3.0              | 1.1                | 2.2                | 3.4                  |
 | 2.5              | 1.2                | 2.5                | 4.2                  |
