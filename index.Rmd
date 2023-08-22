@@ -51,7 +51,7 @@ This lab manual is part of a larger OER course package for teaching undergraduat
 
 ### Attributions
 
-This lab manual was authored by Matt Crump (R exercises), Anjali Krishnan (JAMOVI exercises), Stephen Volz (EXCEL exercises), and Alla Chavarga (SPSS exercises).
+This lab manual was authored by Matt Crump (R exercises), updated by Mallory Barnes. 
 
 Labs 6, 7, and 8 were adapted and expanded from [Open Stats Labs](https://sites.trinity.edu/osl). Thanks to Open Stats Labs (Dr. Kevin P. McIntyre) for their fantastic work.
 

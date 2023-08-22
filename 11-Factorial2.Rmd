@@ -11,8 +11,8 @@ editor_options:
 $("#coverpic").hide();
 </script>
 ```
-[ No amount of experimentation can ever prove me right; a single
-experiment can prove me wrong ---Albert Einstein ]{.newthought}
+[No amount of experimentation can ever prove me right; a single
+experiment can prove me wrong ---Albert Einstein]{.newthought}
 
 ## Do you remember things better when you take pictures of them?
 

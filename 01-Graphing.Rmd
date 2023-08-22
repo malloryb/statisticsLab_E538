@@ -13,7 +13,7 @@ As we have found out from the textbook and lecture, when we measure things, we g
 
 Our general goals for this first lab are to get your feet wet, so to speak. We'll do these things:
 
-1.  Downlaod the statistical software program R and the RStudio (Integrated Development Environment for R) on your personal computers
+1.  Download the statistical software program R and the RStudio (Integrated Development Environment for R) on your personal computers
 2.  Load in some data to a statistical software program
 3.  Talk a little bit about how the data is structured
 4.  Make graphs of the data so we can look at it and make sense of it.
@@ -35,8 +35,6 @@ Find the download R using the link. This will take you to a page with many diffe
 After you have installed R on your computer, you should want to install another program called R studio. This program provides a user-friendly interface for using R. You must already have installed R before you perform this step. The R-studio website is: <http://www.rstudio.com>
 
 Find the download link on the front-page, and then download R studio desktop version for your computer. After you have installed R studio you will be ready to start using R.
-
-The website [R-fiddle](http://www.r-fiddle.org) allows you to run R scripts in the cloud, so you can practice R from your web-browser!
 
 ### Download the lab templates
 
