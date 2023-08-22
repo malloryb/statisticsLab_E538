@@ -1,17 +1,17 @@
 ## What is this?
 
-This is a FREE multi-platform statistics lab manual, based on a lab manual for undergrads in psychology, on a creative commons license. 
+This is a FREE multi-platform statistics lab manual tailored for the SPEA-E538 Environmental Statistics course, forked from the original Crump materials for undergraduates in psychology, and available under a creative commons license.
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 This lab manual is a part of the Answering Questions with Data bundle, including a textbook, this manual, and a course website (including slide decks).
 
-Web-book is here: [https://crumplab.github.io/statistics/](https://crumplab.github.io/statistics/)
+Original Crump Web-book is here: [https://crumplab.github.io/statistics/](https://crumplab.github.io/statistics/)
 
-Lab manual is here: [https://crumplab.github.io/statisticsLab/](https://crumplab.github.io/statisticsLab/)
+E538 Lab manual is here: [https://malloryb.github.io/statisticsLab_E538/](https://malloryb.github.io/statisticsLab_E538/)
 
-Course website is here: [https://crumplab.github.io/psyc3400/](https://crumplab.github.io/psyc3400/)
+E538 Course website is here: [https://malloryb.github.io/statistics_E538/](https://malloryb.github.io/statistics_E538/)
 
-This repository contains the source code for the lab manual.
+This repository contains the source code for the customized lab manual.
 
-**NOTE**: This lab manual contains lab exercises for R.
+**NOTE**: This lab manual contains lab exercises for R, designed to meet the unique needs of students focusing on environmental science.
