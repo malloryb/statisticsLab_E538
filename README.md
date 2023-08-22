@@ -13,6 +13,11 @@ E538 Lab manual is here: [https://malloryb.github.io/statisticsLab_E538/](https:
 E538 Course website is here: [https://malloryb.github.io/statistics_E538/](https://malloryb.github.io/statistics_E538/)
 
 This repository contains the source code for the customized lab manual.
+<<<<<<< HEAD
 
 **NOTE**: This lab manual contains lab exercises for R, designed to meet the unique needs of students focusing on environmental science.
 
+=======
+
+**NOTE**: This lab manual contains lab exercises for R, designed to meet the unique needs of students focusing on environmental science.
+>>>>>>> 7603ac50f1603c9b9e34b0cee371073decfdf443
