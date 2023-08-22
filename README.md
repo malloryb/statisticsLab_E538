@@ -1,7 +1,5 @@
 ## What is this?
 
-## What is this?
-
 This is a FREE multi-platform statistics lab manual tailored for the SPEA-E538 Environmental Statistics course, forked from the original Crump materials for undergraduates in psychology, and available under a creative commons license.
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -17,5 +15,4 @@ E538 Course website is here: [https://malloryb.github.io/statistics_E538/](https
 This repository contains the source code for the customized lab manual.
 
 **NOTE**: This lab manual contains lab exercises for R, designed to meet the unique needs of students focusing on environmental science.
-
 
