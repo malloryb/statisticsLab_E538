@@ -47,7 +47,7 @@ The manual is a free and open resource. See below for more information about cop
 
 This lab manual is released under a creative commons licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Click the link to read more about the license, or read more below in the license section.
 
-This lab manual is part of a larger OER course package for teaching undergraduate statistics in Psychology. Team members include, Matthew Crump, Alla Chavarga, Anjali Krishnan, Jeffrey Suzuki, and Stephen Volz. As this OER comes together, we will be providing a [course website](https://crumplab.github.io/psyc3400/), written in R Markdown, as well as slide decks for the lectures (these will be more fully available by the end of fall 2018). As a result, this textbook, the lab manual, the course website, and the slide decks will all be free, under a creative commons license. The source code for all material is contained in the GitHub repositories for each, and they are a written in R-markdown, so they are relatively easy to copy and edit. Have Fun!
+This lab manual is based on the OER course package for teaching undergraduate statistics in Psychology, customized for Environmental Science Graduate students by Mallory Barnes. The source code for all material is contained in the GitHub repositories for each, and they are a written in R-markdown, so they are relatively easy to copy and edit. Have Fun!
 
 ### Attributions
 
@@ -225,14 +225,19 @@ The R markdown website has an excellent tutorial that is well worth your time to
 
 #### R markdown lab templates
 
-We have created a set of template documents for each lab that can be downloaded here: [download lab templates](https://github.com/CrumpLab/statisticsLab/raw/master/RMarkdownsLab.zip).
+1.  Go to Canvas and download RMarkdownLab1.zip file to your computer.
 
-When you unzip the file you should find the following:
+2.  Unzip the file, this will produce a new folder with three important parts
 
-1.  A new folder titled "RMarkdownsLab"
-2.  Inside the folder you will see the "RMarkdownsLab.Rproj" file
-3.  A data folder containing data files for the labs
-4.  A "LabTemplates" folder containing the R markdown templates for each lab.
+    a.  data folder (contains data files for Lab 1)
+    b.  Blank template (.Rmd file) for completing Lab 1: Lab 01 Graphing_Student Name.Rmd
+    c.  RMarkdownsLab1.Rproj A file with a little blue cube with an R in it.
+
+3.  Double-click the RMarkdownsLab1.Rproj file, this will automatically open R-studio
+
+4.  Open the template .rmd, and use it to begin adding your code and notes for lab 1.
+
+One you've downloaded R-studio on your computer, you'll Just need to find it and double-click. Now you have R-studio. Your lab instructor will also walk you through the steps to get started completing the first lab.
 
 To get started with Lab 1, follow these steps:
 
@@ -241,13 +246,9 @@ To get started with Lab 1, follow these steps:
 3.  double-click the "RMarkdownsLab.Rproj" file
 4.  R-studio will now load up.
 5.  If you click the files tab, you will see all of the files and folders inside the "RMarkdownsLab" folder
-6.  Click on your lab1 .rmd file, it will now load into the editor window.
+6.  Click on your .rmd file, it will now load into the editor window.
 
 Each lab template .rmd file contains three main sections, one for each part of the lab. You will write things inside each section to complete the lab.
-
-### Screencast tutorial
-
-Follow this guide to get up running for Lab 1.
 
 ### R-studio Cloud
 

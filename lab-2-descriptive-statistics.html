@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Lab 2: Descriptive Statistics | 02-Descriptives.knit</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Lab 2: Descriptive Statistics | 02-Descriptives.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Lab 2: Descriptive Statistics | 02-Descriptives.knit" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Statistics Lab Manual</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path=""><a href="#lab-2-descriptive-statistics"><i class="fa fa-check"></i><b>1</b> Lab 2: Descriptive Statistics</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path=""><a href="#general-goals"><i class="fa fa-check"></i><b>1.1</b> General Goals</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path=""><a href="#important-info"><i class="fa fa-check"></i><b>1.1.1</b> Important info</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path=""><a href="#r"><i class="fa fa-check"></i><b>1.2</b> R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path=""><a href="#descriptives-basics-in-r"><i class="fa fa-check"></i><b>1.2.1</b> Descriptives basics in R</a></li>
+<li class="chapter" data-level="1.2.2" data-path=""><a href="#central-tendency"><i class="fa fa-check"></i><b>1.2.2</b> Central Tendency</a></li>
+<li class="chapter" data-level="1.2.3" data-path=""><a href="#variation"><i class="fa fa-check"></i><b>1.2.3</b> Variation</a></li>
+<li class="chapter" data-level="1.2.4" data-path=""><a href="#descriptives-by-conditions"><i class="fa fa-check"></i><b>1.2.4</b> Descriptives by conditions</a></li>
+<li class="chapter" data-level="1.2.5" data-path=""><a href="#describing-gapminder"><i class="fa fa-check"></i><b>1.2.5</b> Describing gapminder</a></li>
+<li class="chapter" data-level="1.2.6" data-path=""><a href="#generalization-exercise"><i class="fa fa-check"></i><b>1.2.6</b> Generalization Exercise</a></li>
+<li class="chapter" data-level="1.2.7" data-path=""><a href="#writing-assignment"><i class="fa fa-check"></i><b>1.2.7</b> Writing assignment</a></li>
+<li class="chapter" data-level="1.2.8" data-path=""><a href="#extra-practice-problems-optional"><i class="fa fa-check"></i><b>1.2.8</b> Extra Practice Problems (Optional)</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!--bookdown:title:end-->
+<!--bookdown:title:start-->
+<div id="lab-2-descriptive-statistics" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Lab 2: Descriptive Statistics<a href="#lab-2-descriptive-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<script>
+$("#coverpic").hide();
+</script>
+<p><span class="newthought">Describing comic sensibility is near impossible. It’s sort of an abstract silliness, that sometimes the joke isn’t the star. —Dana Carvey</span></p>
+<p>The purpose of this lab is to show you how to compute basic descriptive statistics, including measures of central tendency (mean, mode, median) and variation (range, variance, standard deviation).</p>
+<div id="general-goals" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> General Goals<a href="#general-goals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Compute measures of central tendency using software</li>
+<li>Compute measures of variation using software</li>
+<li>Ask some questions of a data set using descriptive statistics</li>
+</ol>
+<div id="important-info" class="section level3 hasAnchor" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Important info<a href="#important-info" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We will be using data from the gapminder project. You can download a small snippet of the data in .csv format from this link (note this dataset was copied from the gapminder library for R) <a href="https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/gapminder.csv" download>gapminder.csv</a>. If you are using R, then you can install the gapminder package. This method is described later in the R section.</p>
+</div>
+</div>
+<div id="r" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> R<a href="#r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="descriptives-basics-in-r" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Descriptives basics in R<a href="#descriptives-basics-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We learned in lecture and from the textbook that data we want to use ask and answer questions often comes with loads of numbers. Too many numbers to look at all at once. That’s one reason we use descriptive statistics. To reduce the big set of numbers to one or two summary numbers that tell use something about all of the numbers. R can produce descriptive statistics for you in many ways. There are base functions for most of the ones that you want. We’ll go over some R basics for descriptive statistics, and then use our new found skills to ask some questions about real data.</p>
+<div id="making-numbers-in-r" class="section level4 hasAnchor" number="1.2.1.1">
+<h4><span class="header-section-number">1.2.1.1</span> Making numbers in R<a href="#making-numbers-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In order to do descriptive statistics we need to put some numbers in a variable. You can also do this using the <code>c()</code> command, which stands for combine</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>my_numbers <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</span></code></pre></div>
+<p>There a few other handy ways to make numbers. We can use <code>seq()</code> to make a sequence. Here’s making the numbers from 1 to 100</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>one_to_one_hundred <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">100</span>,<span class="dv">1</span>)</span></code></pre></div>
+<p>We can repeat things, using rep. Here’s making 10 5s, and 25 1s:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="dv">10</span>,<span class="dv">5</span>)</span></code></pre></div>
+<pre><code>## [1] 10 10 10 10 10</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="dv">1</span>,<span class="dv">25</span>)</span></code></pre></div>
+<pre><code>##  [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>all_together_now <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">10</span>,<span class="dv">5</span>),<span class="fu">rep</span>(<span class="dv">1</span>,<span class="dv">25</span>)) </span></code></pre></div>
+</div>
+<div id="sum" class="section level4 hasAnchor" number="1.2.1.2">
+<h4><span class="header-section-number">1.2.1.2</span> Sum<a href="#sum" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Let’s play with the number 1 to 100. First, let’s use the <code>sum()</code> function to add them up</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>one_to_one_hundred <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">100</span>,<span class="dv">1</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">sum</span>(one_to_one_hundred)</span></code></pre></div>
+<pre><code>## [1] 5050</code></pre>
+</div>
+<div id="length" class="section level4 hasAnchor" number="1.2.1.3">
+<h4><span class="header-section-number">1.2.1.3</span> Length<a href="#length" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We put 100 numbers into the variable <code>one_to_one_hundred</code>. We know how many numbers there are in there. How can we get R to tell us? We use <code>length()</code> for that.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">length</span>(one_to_one_hundred)</span></code></pre></div>
+<pre><code>## [1] 100</code></pre>
+</div>
+</div>
+<div id="central-tendency" class="section level3 hasAnchor" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Central Tendency<a href="#central-tendency" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="mean" class="section level4 hasAnchor" number="1.2.2.1">
+<h4><span class="header-section-number">1.2.2.1</span> Mean<a href="#mean" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Remember the mean of some numbers is their sum, divided by the number of numbers. We can compute the mean like this:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">sum</span>(one_to_one_hundred)<span class="sc">/</span><span class="fu">length</span>(one_to_one_hundred)</span></code></pre></div>
+<pre><code>## [1] 50.5</code></pre>
+<p>Or, we could just use the <code>mean()</code> function like this:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">mean</span>(one_to_one_hundred)</span></code></pre></div>
+<pre><code>## [1] 50.5</code></pre>
+</div>
+<div id="median" class="section level4 hasAnchor" number="1.2.2.2">
+<h4><span class="header-section-number">1.2.2.2</span> Median<a href="#median" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The median is the number in the exact middle of the numbers ordered from smallest to largest. If there are an even number of numbers (no number in the middle), then we take the number in between the two (decimal .5). Use the <code>median</code> function. There’s only 3 numbers here. The middle one is 2, that should be the median</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="fu">median</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>))</span></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+</div>
+<div id="mode" class="section level4 hasAnchor" number="1.2.2.3">
+<h4><span class="header-section-number">1.2.2.3</span> Mode<a href="#mode" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>R does not a base function for the Mode. You would have to write one for yourself. Here is an example of writing your own mode function, and then using it. Note I searched how to do this on Google, and am using the mode defined by <a href="https://stackoverflow.com/questions/2547402/is-there-a-built-in-function-for-finding-the-mode">this answer on stack overflow</a></p>
+<p>Remember, the mode is the most frequently occurring number in the set. Below 1 occurs the most, so the mode will be one.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a>my_mode <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a>  ux <span class="ot">&lt;-</span> <span class="fu">unique</span>(x)</span>
+<span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a>  ux[<span class="fu">which.max</span>(<span class="fu">tabulate</span>(<span class="fu">match</span>(x, ux)))]</span>
+<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a>}</span>
+<span id="cb18-5"><a href="#cb18-5" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" tabindex="-1"></a><span class="fu">my_mode</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>))</span></code></pre></div>
+<pre><code>## [1] 1</code></pre>
+</div>
+</div>
+<div id="variation" class="section level3 hasAnchor" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Variation<a href="#variation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We often want to know how variable the numbers are. We are going to look at descriptive statistics to describe this such as the <strong>range</strong>, <strong>variance</strong>, the <strong>standard deviation</strong>, and a few others.</p>
+<p>First, let’s remind ourselves what variation looks like (it’s when the numbers are different). We will sample 100 numbers from a normal distribution (don’t worry about this yet), with a mean of 10, and a standard deviation of 5, and then make a histogram so we can see the variation around 10..</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a>sample_numbers <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>,<span class="dv">10</span>,<span class="dv">5</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a><span class="fu">hist</span>(sample_numbers)</span></code></pre></div>
+<p><img src="02-Descriptives_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<div id="range" class="section level4 hasAnchor" number="1.2.3.1">
+<h4><span class="header-section-number">1.2.3.1</span> range<a href="#range" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The range is the minimum and maximum values in the set, we use the <code>range</code> function.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="fu">range</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] -0.165494 23.580773</code></pre>
+</div>
+<div id="var-variance" class="section level4 hasAnchor" number="1.2.3.2">
+<h4><span class="header-section-number">1.2.3.2</span> var = variance<a href="#var-variance" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We can find the sample variance using <code>var</code>. Note, divides by (n-1)</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="fu">var</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] 28.27552</code></pre>
+</div>
+<div id="sd-standard-deviation" class="section level4 hasAnchor" number="1.2.3.3">
+<h4><span class="header-section-number">1.2.3.3</span> sd = standard deviation<a href="#sd-standard-deviation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We find the sample standard deviation us SD. Note, divides by (n-1)</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="fu">sd</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] 5.317473</code></pre>
+<p>Remember that the standard deviation is just the square root of the variance, see:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="fu">var</span>(sample_numbers))</span></code></pre></div>
+<pre><code>## [1] 5.317473</code></pre>
+</div>
+<div id="all-descriptives" class="section level4 hasAnchor" number="1.2.3.4">
+<h4><span class="header-section-number">1.2.3.4</span> All Descriptives<a href="#all-descriptives" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Let’s put all of the descriptives and other functions so far in one place:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a>sample_numbers <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>,<span class="dv">10</span>,<span class="dv">5</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" tabindex="-1"></a><span class="fu">sum</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] 994.8609</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="fu">length</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] 100</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a><span class="fu">mean</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] 9.948609</code></pre>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a><span class="fu">median</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] 10.21341</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a><span class="fu">my_mode</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] 11.26743</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" tabindex="-1"></a><span class="fu">range</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] -0.6592151 19.5720621</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a><span class="fu">var</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] 21.26517</code></pre>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a><span class="fu">sd</span>(sample_numbers)</span></code></pre></div>
+<pre><code>## [1] 4.611417</code></pre>
+</div>
+</div>
+<div id="descriptives-by-conditions" class="section level3 hasAnchor" number="1.2.4">
+<h3><span class="header-section-number">1.2.4</span> Descriptives by conditions<a href="#descriptives-by-conditions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Sometimes you will have a single variable with some numbers, and you can use the above functions to find the descriptives for that variable. Other times (most often in this course), you will have a big data frame of numbers, with different numbers in different conditions. You will want to find descriptive statistics for each the sets of numbers inside each of the conditions. Fortunately, this is where R really shines, it does it all for you in one go.</p>
+<p>Let’s illustrate the problem. Here I make a date frame with 10 numbers in each condition. There are 10 conditions, each labelled, A, B, C, D, E, F, G, H, I, J.</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a>scores <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>,<span class="dv">10</span>,<span class="dv">5</span>)</span>
+<span id="cb45-2"><a href="#cb45-2" tabindex="-1"></a>conditions <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;C&quot;</span>,<span class="st">&quot;D&quot;</span>,<span class="st">&quot;E&quot;</span>,<span class="st">&quot;F&quot;</span>,<span class="st">&quot;G&quot;</span>,<span class="st">&quot;H&quot;</span>,<span class="st">&quot;I&quot;</span>,<span class="st">&quot;J&quot;</span>), <span class="at">each =</span><span class="dv">10</span>)</span>
+<span id="cb45-3"><a href="#cb45-3" tabindex="-1"></a>my_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(conditions,scores)</span></code></pre></div>
+<p>If you look at the <code>my_df</code> data frame, you will see it has 100 rows, there are 10 rows for each condition with a label in the <code>conditions</code> column, and 10 scores for each condition in the <code>scores</code> column. What if you wanted to know the mean of the scores in each condition? You would want to find 10 means.</p>
+<p>The slow way to do it would be like this:</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" tabindex="-1"></a><span class="fu">mean</span>(my_df[my_df<span class="sc">$</span>conditions<span class="sc">==</span><span class="st">&quot;A&quot;</span>,]<span class="sc">$</span>scores)</span></code></pre></div>
+<pre><code>## [1] 10.19124</code></pre>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" tabindex="-1"></a><span class="fu">mean</span>(my_df[my_df<span class="sc">$</span>conditions<span class="sc">==</span><span class="st">&quot;B&quot;</span>,]<span class="sc">$</span>scores)</span></code></pre></div>
+<pre><code>## [1] 9.507284</code></pre>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" tabindex="-1"></a><span class="fu">mean</span>(my_df[my_df<span class="sc">$</span>conditions<span class="sc">==</span><span class="st">&quot;C&quot;</span>,]<span class="sc">$</span>scores)</span></code></pre></div>
+<pre><code>## [1] 10.16055</code></pre>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" tabindex="-1"></a><span class="co"># and then keep going</span></span></code></pre></div>
+<p>Nobody wants to do that! Not, me I stopped doing it that way, you should to.</p>
+<div id="group_by-and-summarise" class="section level4 hasAnchor" number="1.2.4.1">
+<h4><span class="header-section-number">1.2.4.1</span> group_by and summarise<a href="#group_by-and-summarise" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We can easily do everything all at once using the <code>group_by</code> and <code>summarise</code> function from the <code>dplyr</code> package. Just watch</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" tabindex="-1"></a>my_df <span class="sc">%&gt;%</span></span>
+<span id="cb57-2"><a href="#cb57-2" tabindex="-1"></a>  <span class="fu">group_by</span>(conditions) <span class="sc">%&gt;%</span></span>
+<span id="cb57-3"><a href="#cb57-3" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">means =</span> <span class="fu">mean</span>(scores))</span></code></pre></div>
+<pre><code>## # A tibble: 10 × 2
+##    conditions means
+##    &lt;chr&gt;      &lt;dbl&gt;
+##  1 A          10.2 
+##  2 B           9.51
+##  3 C          10.2 
+##  4 D          11.0 
+##  5 E           9.63
+##  6 F          10.1 
+##  7 G           9.37
+##  8 H          10.1 
+##  9 I           9.90
+## 10 J           8.02</code></pre>
+<p>A couple things now. First, the print out of this was ugly. Let’s fix that. we put the results of our code into a new variable, then we use <code>knitr::kable</code> to print it out nicely when we <code>knit</code> the document</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" tabindex="-1"></a>summary_df <span class="ot">&lt;-</span> my_df <span class="sc">%&gt;%</span></span>
+<span id="cb59-2"><a href="#cb59-2" tabindex="-1"></a>               <span class="fu">group_by</span>(conditions) <span class="sc">%&gt;%</span></span>
+<span id="cb59-3"><a href="#cb59-3" tabindex="-1"></a>               <span class="fu">summarise</span>(<span class="at">means =</span> <span class="fu">mean</span>(scores))</span>
+<span id="cb59-4"><a href="#cb59-4" tabindex="-1"></a></span>
+<span id="cb59-5"><a href="#cb59-5" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(summary_df)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">conditions</th>
+<th align="right">means</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">A</td>
+<td align="right">10.191237</td>
+</tr>
+<tr class="even">
+<td align="left">B</td>
+<td align="right">9.507284</td>
+</tr>
+<tr class="odd">
+<td align="left">C</td>
+<td align="right">10.160554</td>
+</tr>
+<tr class="even">
+<td align="left">D</td>
+<td align="right">11.002124</td>
+</tr>
+<tr class="odd">
+<td align="left">E</td>
+<td align="right">9.630831</td>
+</tr>
+<tr class="even">
+<td align="left">F</td>
+<td align="right">10.132969</td>
+</tr>
+<tr class="odd">
+<td align="left">G</td>
+<td align="right">9.370876</td>
+</tr>
+<tr class="even">
+<td align="left">H</td>
+<td align="right">10.124336</td>
+</tr>
+<tr class="odd">
+<td align="left">I</td>
+<td align="right">9.902043</td>
+</tr>
+<tr class="even">
+<td align="left">J</td>
+<td align="right">8.017434</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="multiple-descriptives" class="section level4 hasAnchor" number="1.2.4.2">
+<h4><span class="header-section-number">1.2.4.2</span> multiple descriptives<a href="#multiple-descriptives" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The best thing about the <code>dplyr</code> method, is that we can add more than one function, and we’ll get more than one summary returned, all in a nice format, let’s add the standard deviation:</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" tabindex="-1"></a>summary_df <span class="ot">&lt;-</span> my_df <span class="sc">%&gt;%</span></span>
+<span id="cb60-2"><a href="#cb60-2" tabindex="-1"></a>               <span class="fu">group_by</span>(conditions) <span class="sc">%&gt;%</span></span>
+<span id="cb60-3"><a href="#cb60-3" tabindex="-1"></a>               <span class="fu">summarise</span>(<span class="at">means =</span> <span class="fu">mean</span>(scores),</span>
+<span id="cb60-4"><a href="#cb60-4" tabindex="-1"></a>                         <span class="at">sds =</span> <span class="fu">sd</span>(scores))</span>
+<span id="cb60-5"><a href="#cb60-5" tabindex="-1"></a></span>
+<span id="cb60-6"><a href="#cb60-6" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(summary_df)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">conditions</th>
+<th align="right">means</th>
+<th align="right">sds</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">A</td>
+<td align="right">10.191237</td>
+<td align="right">4.623141</td>
+</tr>
+<tr class="even">
+<td align="left">B</td>
+<td align="right">9.507284</td>
+<td align="right">4.804695</td>
+</tr>
+<tr class="odd">
+<td align="left">C</td>
+<td align="right">10.160554</td>
+<td align="right">6.312257</td>
+</tr>
+<tr class="even">
+<td align="left">D</td>
+<td align="right">11.002124</td>
+<td align="right">4.696599</td>
+</tr>
+<tr class="odd">
+<td align="left">E</td>
+<td align="right">9.630831</td>
+<td align="right">6.647334</td>
+</tr>
+<tr class="even">
+<td align="left">F</td>
+<td align="right">10.132969</td>
+<td align="right">6.282385</td>
+</tr>
+<tr class="odd">
+<td align="left">G</td>
+<td align="right">9.370876</td>
+<td align="right">4.478775</td>
+</tr>
+<tr class="even">
+<td align="left">H</td>
+<td align="right">10.124336</td>
+<td align="right">4.872180</td>
+</tr>
+<tr class="odd">
+<td align="left">I</td>
+<td align="right">9.902043</td>
+<td align="right">2.967906</td>
+</tr>
+<tr class="even">
+<td align="left">J</td>
+<td align="right">8.017434</td>
+<td align="right">4.952717</td>
+</tr>
+</tbody>
+</table>
+<p>We’ll add the min and the max too:</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" tabindex="-1"></a>summary_df <span class="ot">&lt;-</span> my_df <span class="sc">%&gt;%</span></span>
+<span id="cb61-2"><a href="#cb61-2" tabindex="-1"></a>               <span class="fu">group_by</span>(conditions) <span class="sc">%&gt;%</span></span>
+<span id="cb61-3"><a href="#cb61-3" tabindex="-1"></a>               <span class="fu">summarise</span>(<span class="at">means =</span> <span class="fu">mean</span>(scores),</span>
+<span id="cb61-4"><a href="#cb61-4" tabindex="-1"></a>                         <span class="at">sds =</span> <span class="fu">sd</span>(scores),</span>
+<span id="cb61-5"><a href="#cb61-5" tabindex="-1"></a>                         <span class="at">min =</span> <span class="fu">min</span>(scores),</span>
+<span id="cb61-6"><a href="#cb61-6" tabindex="-1"></a>                         <span class="at">max =</span> <span class="fu">max</span>(scores))</span>
+<span id="cb61-7"><a href="#cb61-7" tabindex="-1"></a></span>
+<span id="cb61-8"><a href="#cb61-8" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(summary_df)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">conditions</th>
+<th align="right">means</th>
+<th align="right">sds</th>
+<th align="right">min</th>
+<th align="right">max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">A</td>
+<td align="right">10.191237</td>
+<td align="right">4.623141</td>
+<td align="right">2.6659927</td>
+<td align="right">18.96254</td>
+</tr>
+<tr class="even">
+<td align="left">B</td>
+<td align="right">9.507284</td>
+<td align="right">4.804695</td>
+<td align="right">3.4382926</td>
+<td align="right">17.84582</td>
+</tr>
+<tr class="odd">
+<td align="left">C</td>
+<td align="right">10.160554</td>
+<td align="right">6.312257</td>
+<td align="right">0.7512942</td>
+<td align="right">21.76496</td>
+</tr>
+<tr class="even">
+<td align="left">D</td>
+<td align="right">11.002124</td>
+<td align="right">4.696599</td>
+<td align="right">4.7799440</td>
+<td align="right">21.04899</td>
+</tr>
+<tr class="odd">
+<td align="left">E</td>
+<td align="right">9.630831</td>
+<td align="right">6.647334</td>
+<td align="right">-2.5936117</td>
+<td align="right">16.75210</td>
+</tr>
+<tr class="even">
+<td align="left">F</td>
+<td align="right">10.132969</td>
+<td align="right">6.282385</td>
+<td align="right">-3.8328083</td>
+<td align="right">14.78552</td>
+</tr>
+<tr class="odd">
+<td align="left">G</td>
+<td align="right">9.370876</td>
+<td align="right">4.478775</td>
+<td align="right">2.0071805</td>
+<td align="right">15.55963</td>
+</tr>
+<tr class="even">
+<td align="left">H</td>
+<td align="right">10.124336</td>
+<td align="right">4.872180</td>
+<td align="right">0.8281868</td>
+<td align="right">16.75531</td>
+</tr>
+<tr class="odd">
+<td align="left">I</td>
+<td align="right">9.902043</td>
+<td align="right">2.967906</td>
+<td align="right">5.2000757</td>
+<td align="right">14.36664</td>
+</tr>
+<tr class="even">
+<td align="left">J</td>
+<td align="right">8.017434</td>
+<td align="right">4.952717</td>
+<td align="right">-1.8878004</td>
+<td align="right">15.21635</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="describing-gapminder" class="section level3 hasAnchor" number="1.2.5">
+<h3><span class="header-section-number">1.2.5</span> Describing gapminder<a href="#describing-gapminder" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Now that we know how to get descriptive statistics from R, we cam do this will some real data. Let’s quickly ask a few question about the gapminder data.</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" tabindex="-1"></a><span class="fu">library</span>(gapminder)</span>
+<span id="cb62-2"><a href="#cb62-2" tabindex="-1"></a>gapminder_df <span class="ot">&lt;-</span> gapminder</span></code></pre></div>
+<p>Note: The above code will only work if you have installed the gapminder package. Make sure you are connected to the internet, then choose the Packages tab from the bottom right panel, and choose install. Thens search for gapminder, choose it, and install it.</p>
+<div id="what-are-some-descriptive-for-life-expectancy-by-continent" class="section level4 hasAnchor" number="1.2.5.1">
+<h4><span class="header-section-number">1.2.5.1</span> What are some descriptive for Life expectancy by continent?<a href="#what-are-some-descriptive-for-life-expectancy-by-continent" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Copy the code from the last part of descriptives using <code>dplyr</code>, then change the names like this:</p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" tabindex="-1"></a>summary_df <span class="ot">&lt;-</span> gapminder_df <span class="sc">%&gt;%</span></span>
+<span id="cb63-2"><a href="#cb63-2" tabindex="-1"></a>               <span class="fu">group_by</span>(continent) <span class="sc">%&gt;%</span></span>
+<span id="cb63-3"><a href="#cb63-3" tabindex="-1"></a>               <span class="fu">summarise</span>(<span class="at">means =</span> <span class="fu">mean</span>(lifeExp),</span>
+<span id="cb63-4"><a href="#cb63-4" tabindex="-1"></a>                         <span class="at">sds =</span> <span class="fu">sd</span>(lifeExp),</span>
+<span id="cb63-5"><a href="#cb63-5" tabindex="-1"></a>                         <span class="at">min =</span> <span class="fu">min</span>(lifeExp),</span>
+<span id="cb63-6"><a href="#cb63-6" tabindex="-1"></a>                         <span class="at">max =</span> <span class="fu">max</span>(lifeExp))</span>
+<span id="cb63-7"><a href="#cb63-7" tabindex="-1"></a></span>
+<span id="cb63-8"><a href="#cb63-8" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(summary_df)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">continent</th>
+<th align="right">means</th>
+<th align="right">sds</th>
+<th align="right">min</th>
+<th align="right">max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Africa</td>
+<td align="right">48.86533</td>
+<td align="right">9.150210</td>
+<td align="right">23.599</td>
+<td align="right">76.442</td>
+</tr>
+<tr class="even">
+<td align="left">Americas</td>
+<td align="right">64.65874</td>
+<td align="right">9.345088</td>
+<td align="right">37.579</td>
+<td align="right">80.653</td>
+</tr>
+<tr class="odd">
+<td align="left">Asia</td>
+<td align="right">60.06490</td>
+<td align="right">11.864532</td>
+<td align="right">28.801</td>
+<td align="right">82.603</td>
+</tr>
+<tr class="even">
+<td align="left">Europe</td>
+<td align="right">71.90369</td>
+<td align="right">5.433178</td>
+<td align="right">43.585</td>
+<td align="right">81.757</td>
+</tr>
+<tr class="odd">
+<td align="left">Oceania</td>
+<td align="right">74.32621</td>
+<td align="right">3.795611</td>
+<td align="right">69.120</td>
+<td align="right">81.235</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="generalization-exercise" class="section level3 hasAnchor" number="1.2.6">
+<h3><span class="header-section-number">1.2.6</span> Generalization Exercise<a href="#generalization-exercise" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>(4 points - Pass/Fail)</p>
+<p>Complete the generalization exercise described in your R Markdown document for this lab.</p>
+<ol style="list-style-type: decimal">
+<li><p>What is the mean, standard deviation, minimum and maximum life expectancy for all the gapminder data (across all the years and countries). Hint: do not use <code>group_by</code></p></li>
+<li><p>What is the mean, standard deviation, minimum and maximum life expectancy for all of the continents in 2007, the most recent year in the dataset. Hint: add another pipe using <code>filter(year==2007) %&gt;%</code></p></li>
+</ol>
+</div>
+<div id="writing-assignment" class="section level3 hasAnchor" number="1.2.7">
+<h3><span class="header-section-number">1.2.7</span> Writing assignment<a href="#writing-assignment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>(8 points - Graded)</p>
+<p>Complete the writing assignment described in your R Markdown document for this lab. When you have finished everything. Knit the document and hand in your stuff (you can submit your .RMD file to blackboard if it does not knit.)</p>
+<p>Your writing assignment is to answer these questions in full sentences using simple plain langauge:</p>
+<ol style="list-style-type: decimal">
+<li>Define the mode.</li>
+<li>Explain what would need to happen in order for a set of numbers to have two modes</li>
+<li>Define the median</li>
+<li>Define the mean</li>
+<li>Define the range</li>
+<li>When calculating the standard deviation, explain what the difference scores represent</li>
+<li>Explain why the difference scores are squared when calculating the standard deviation</li>
+<li>If one set of numbers had a standard deviation of 5, and another had a standard deviation of 10, which set of numbers would have greater variance, explain why.</li>
+</ol>
+<p><strong>Rubric</strong></p>
+<p>General grading.</p>
+<ul>
+<li>You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 points for that question)</li>
+<li>You must write in complete sentences. Point form sentences will be given 0 points.</li>
+<li>Completely incorrect answers will receive 0 points.</li>
+<li>If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question</li>
+</ul>
+</div>
+<div id="extra-practice-problems-optional" class="section level3 hasAnchor" number="1.2.8">
+<h3><span class="header-section-number">1.2.8</span> Extra Practice Problems (Optional)<a href="#extra-practice-problems-optional" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr />
+<ol style="list-style-type: decimal">
+<li><p>Using the life expectancy data set, produce a table of output showing the descriptive statistics (measures of central tendency and variability) for both years 1800 and 1934 (during the Great Depression).</p></li>
+<li><p>Plot histograms of life expectancy for both years. How are these distributions different? (Hint: Plot these on the same axes so that they are comparable).</p></li>
+</ol>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/CrumpLab/statisticsLab/blob/master/%s",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": false,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
