@@ -1,3 +1,7 @@
+---
+---
+---
+
 # Lab 2: Descriptive Statistics
 
 ```{=html}
@@ -276,7 +280,7 @@ knitr::kable(summary_df)
 
 ### Generalization Exercise
 
-(1 point - Pass/Fail)
+(4 points - Pass/Fail)
 
 Complete the generalization exercise described in your R Markdown document for this lab.
 
@@ -286,7 +290,7 @@ Complete the generalization exercise described in your R Markdown document for t
 
 ### Writing assignment
 
-(2 points - Graded)
+(8 points - Graded)
 
 Complete the writing assignment described in your R Markdown document for this lab. When you have finished everything. Knit the document and hand in your stuff (you can submit your .RMD file to blackboard if it does not knit.)
 
@@ -305,12 +309,12 @@ Your writing assignment is to answer these questions in full sentences using sim
 
 General grading.
 
--   You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 out .25 points for that question)
+-   You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 points for that question)
 -   You must write in complete sentences. Point form sentences will be given 0 points.
 -   Completely incorrect answers will receive 0 points.
 -   If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question
 
-### Practice Problems
+### Extra Practice Problems (Optional)
 
 ------------------------------------------------------------------------
 

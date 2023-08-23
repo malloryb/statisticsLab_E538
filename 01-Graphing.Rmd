@@ -40,30 +40,35 @@ After you have installed R on your computer, you should want to install another 
 
 Find the download link on the front-page, and then download R studio desktop version for your computer. After you have installed R studio you will be ready to start using R.
 
-### Download the lab templates
+### Download the lab template
 
 You will be completing each lab by writing your code and notes in an R Markdown document.
 
-1.  Download the [RMarkdownsLab.zip](https://github.com/CrumpLab/statisticsLab/raw/master/RMarkdownsLab.zip) to your computer.
+1.  Go to Canvas and download RMarkdownLab1.zip file to your computer.
+
 2.  Unzip the file, this will produce a new folder with three important parts
-    a.  data folder (contains data files for all labs)
-    b.  LabTemplates folder (contains blank templates for completing all the labs)
-    c.  RMarkdownsLab.Rproj A file with a little blue cube with an R in it.
-3.  Double-click the RMarkdownsLab.Rproj file, this will automatically open R-studio
-4.  Copy the template .Rmd file for lab 1 from the LabTemplates folder into the main folder, then open it, and use it to begin adding your code and notes for lab 1.
-5.  Watch this screencast to help you get started.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/voMIi1fpe5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    a.  data folder (contains data files for Lab 1)
+    b.  Blank template (.Rmd file) for completing Lab 1: Lab 01 Graphing_Student Name.Rmd
+    c.  RMarkdownsLab1.Rproj A file with a little blue cube with an R in it.
 
-</iframe>
+3.  Double-click the RMarkdownsLab1.Rproj file, this will automatically open R-studio
 
-One you've downloaded R-studio on your computer, you'll Just need to find it and double-click. Now you have R-studio. Your lab instructor will also walk you through the steps to get started completing the first lab. We also wrote down the steps [here](https://crumplab.github.io/statisticsLab/software.html#how-to-complete-the-r-labs).
+4.  Open the template .rmd, and use it to begin adding your code and notes for lab 1.
 
-There are numerous resources for learning about R, we put some of them on the course website, under the [resouces page](https://crumplab.github.io/psyc3400/Resources.html). You will find these resources helpful as you learn. We also have a kind of [general introduction to R and Rstudio here](https://crumplab.github.io/statisticsLab/software.html#r). This shows you how to download R and R-studio at home (it's free). Throughout the labs you will be writing things called R Markdown documents. You will learn how to do this throughout the labs, but it can also be worthwhile reading other tutorials, such as the one provided by [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html).
+One you've downloaded R-studio on your computer, you'll Just need to find it and double-click. Now you have R-studio. Your lab instructor will also walk you through the steps to get started completing the first lab. The steps are [here](https://crumplab.github.io/statisticsLab/software.html#how-to-complete-the-r-labs).
 
-When we made this course, we assumed that most students would be unfamiliar with R and R-studio, and might even be frightened of it, because it is a computer programming language (OOOOHHH NOOOOOOO, I NEED TO DROP THIS COURSE NOW)...Don't worry. It's going to be way easier than you think. Let's compare to other statistics courses where you would learn something like SPSS. That is also a limited programming language, but you would mostly learn how to point with a mouse, and click with button. I bet you already know how to do that. I bet you also already know how to copy and paste text, and press enter. That's mostly what we'll be doing to learn R. We will be doing statistics by typing commands, rather than by clicking buttons. However, lucky for you, all of the commands are already written for you. You just have to copy/paste them.
+There are numerous resources for learning about R, and I've put some of them on the course Canvas, under the Resources module. You will find these resources helpful as you learn.The Crump lab also has a helpful [general introduction to R and Rstudio here](https://crumplab.github.io/statisticsLab/software.html#r). This shows you how to download R and R-studio at home (it's free). Throughout the labs you will be writing things called R Markdown documents. You will learn how to do this throughout the labs, but it can also be worthwhile reading other tutorials, such as the one provided by [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html).
 
-We know that this will seem challenging at first. But, we think that with lots of working examples, you will get the hang of it, and by the end of the course you will be able to do things you might never have dreamed you can do. It's really a fantastic skill to learn, even if you aren't planning on going on to do research in Psychology (in which case, this kind of thing is necessary skill to learn). With that, let's begin.
+When I designed this course, I considered that many students might be
+unfamiliar with R and RStudio. The idea of diving into a computer
+programming language might seem daunting or even intimidating. But I
+assure you, there's no need to panic or consider dropping the course! In
+reality, learning R is going to be much more accessible and enjoyable
+than you might think. Together, we'll demystify the process and make it
+an engaging experience. Let's compare to other statistics courses where you would learn something like SPSS or SAS. That is also a limited programming language, but you would mostly learn how to point with a mouse, and click with button. I bet you already know how to do that. I bet you also already know how to copy and paste text, and press enter. That's mostly what we'll be doing to learn R. We will be doing statistics by typing commands, rather than by clicking buttons. However, lucky for you, all of the commands are already written for you. You just have to copy/paste them.
+
+I know that this will seem challenging at first. But, I think that with lots of working examples, you will get the hang of it, and by the end of the course you will be able to do things you might never have dreamed you can do. It's really a fantastic skill to learn, even if you aren't planning on going on to do research (in which case, this kind of thing is necessary skill to learn). With that, let's begin.
 
 ### Get some data
 
@@ -77,14 +82,14 @@ You just made R sample 100 numbers, and then plot the results in a histogram. Pr
 
 For now, let's do something that might be a little bit more interesting...what movies are going to be filming in NYC? It turns out that NYC makes a lot of data about a lot things open and free for anyone to download and look at. This is the NYC Open Data website: <https://opendata.cityofnewyork.us>. I searched through the data, and found a data file that lists the locations of film permits for shooting movies all throughout the Burroughs. There are multiple ways to load this data into R.
 
-1.  If you have downloaded the [RMarkdownsLab.zip](https://github.com/CrumpLab/statisticsLab/raw/master/RMarkdownsLab.zip) file, then you already have the data file in the data folder. Assuming you are working in your main directory (your .rmd file is saved in the main folder that contains both the data and template folders), then use the following commands to load the data.
+1.  If you have downloaded the [RMarkdownLab1.zip](https://github.com/CrumpLab/statisticsLab/raw/master/RMarkdownsLab.zip) file, then you already have the data file in the data folder. Assuming you are working in your main directory (your .rmd file is saved in the main folder that contains both the data and template folders), then use the following commands to load the data.
 
 ```{r}
 library(data.table)
 nyc_films <-fread("data/Film_Permits.csv")
 ```
 
-2.  If the above method doesn't work, you can try loading the data from the course website using:
+2.  If the above method doesn't work, you can try loading the data from my github:
 
 ```{r, eval=F}
 library(data.table)
@@ -599,7 +604,7 @@ ggplot(smaller_df,aes(y= lifeExp, x= year,
 
 The following generalization exercise and writing assignment is also in your lab R Markdown document for this lab. Complete your work in that document and hand it in.
 
-(1 point - Pass/Fail)
+(4 points - Pass/Fail)
 
 Use the code from above to attempt to solve the extra things we ask you do for this assignment. You generalization exercises are as follows:
 
@@ -611,13 +616,15 @@ Use the code from above to attempt to solve the extra things we ask you do for t
 
 ### Writing assignment
 
-Complete the writing assignment described in your R Markdown document for this lab. When you have finished everything. Knit the document and hand in your stuff (you can submit your .RMD file to blackboard if it does not knit.)
+Complete the writing assignment described here in your R Markdown document for this lab. When you have finished everything, knit the document and submit to Canvas. \
+\
+**Note**: It's vital that the work submitted is entirely your own. Utilizing chatGPT or other AI to complete this portion of the lab assignment is not permissible. These responses must reflect your own words and thoughts. Using external assistance not only constitutes plagiarism but also undermines the educational value of this exercise, hindering your opportunity to learn and grasp the concepts intended.
 
 The question for this lab is a long answer question about histograms. Here is the question:
 
 Describe what histograms are, how to interpret them, and what they are useful for. You should answer each of these questions:
 
-The answers to each of these questions are worth .25 points each, for a total of 2 points
+The answers to each of these questions are worth 1 point each, for a total of 8 points
 
 a.  What do the bars on a histogram represent?
 b.  How many bars can a histogram have?
@@ -632,7 +639,7 @@ h.  Imagine you had two histograms, one was very wide and spread out, the other 
 
 General grading.
 
--   You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 out .25 points for that question)
+-   You will receive 0 points for missing answers (say, if you do not answer question c, then you will receive 0 points for that question)
 -   You must write in complete sentences. Point form sentences will be given 0 points.
 -   Completely incorrect answers will receive 0 points. For example, if you incorrectly describe what the x and y-axes refer to, then you will receive 0 points for that question.
--   If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question
+-   If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question.
