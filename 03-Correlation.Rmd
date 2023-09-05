@@ -18,7 +18,7 @@ In this lab you will learn how to compute correlations between two variables in 
 
 ### Important Info
 
-We use data from the [World Happiness Report](http://worldhappiness.report). A .csv of the data can be found here: <a href="https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/WHR2018.csv" download>WHR2018.csv</a>
+We use data from the [World Happiness Report](http://worldhappiness.report). A .csv of the data is in your Lab zip file on Canvas.
 
 ## R
 
@@ -108,7 +108,7 @@ Let's take a look at some correlations in real data. We are going to look at res
 
 #### Load the data
 
-We load the data into a data frame. Reminder, the following assumes that you have downloaded the [RMarkdownsLab.zip](https://github.com/CrumpLab/statisticsLab/raw/master/RMarkdownsLab.zip) file which contains the data file in the data folder.
+We load the data into a data frame. Reminder, the following assumes that you have downloaded the RMarkdownsLab.zip file which contains the data file in the data folder.
 
 ```{r, warning=F, message=F}
 library(data.table)
@@ -284,7 +284,7 @@ Answer the following questions with complete sentences. When you have finished e
 
 3.  Explain the difference between a correlation of r = .5, and r = -.5.
 
-### Practice Problems
+### Suggested Practice Problems
 
 ------------------------------------------------------------------------
 
