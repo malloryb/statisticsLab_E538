@@ -98,6 +98,9 @@ R does not a base function for the Mode. You would have to write one for yoursel
 
 Remember, the mode is the most frequently occurring number in the set. Below 1 occurs the most, so the mode will be one.
 
+Note: When using custom functions like `mode`, ensure that the function is in the R environment. You can verify this in RStudio's Environment panel. Once it's in the environment, it should function correctly whether you place it in the source section or elsewhere.
+
+
 ```{r}
 
 my_mode <- function(x) {
@@ -120,6 +123,8 @@ First, let's remind ourselves what variation looks like (it's when the numbers a
 sample_numbers <- rnorm(100,10,5)
 hist(sample_numbers)
 ```
+
+Note: The `rnorm()` function generates random numbers and can result in different outputs for each student. To keep the exercise consistent, you may use the `set.seed()` function before calling `rnorm()`. This sets a static seed for random number generation, ensuring that everyone gets the same random numbers for the exercise.
 
 #### range
 
@@ -261,6 +266,8 @@ gapminder_df <- gapminder
 
 Note: The above code will only work if you have installed the gapminder package. Make sure you are connected to the internet, then choose the Packages tab from the bottom right panel, and choose install. Thens search for gapminder, choose it, and install it.
 
+Another Note: Installing R packages should typically be done in the R console rather than in the RMarkdown document. This is a one-time action and doesn't need to be repeated each time you knit the document. To load an already installed package for use in your RMarkdown document, you can use the `library()` function within the setup chunk.
+
 #### What are some descriptive for Life expectancy by continent?
 
 Copy the code from the last part of descriptives using `dplyr`, then change the names like this:
@@ -286,7 +293,7 @@ Complete the generalization exercise described in your R Markdown document for t
 
 1.  What is the mean, standard deviation, minimum and maximum life expectancy for all the gapminder data (across all the years and countries). Hint: do not use `group_by`
 
-2.  What is the mean, standard deviation, minimum and maximum life expectancy for all of the continents in 2007, the most recent year in the dataset. Hint: add another pipe using `filter(year==2007) %>%`
+2.   Calculate the mean, standard deviation, minimum, and maximum life expectancy across all continents for the year 2007, which is the most recent year available in the dataset. You can filter the data to this year by adding another pipe and using `filter(year == 2007) %>%`.
 
 ### Writing assignment
 

@@ -11,6 +11,11 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+
+# Remember: Load your required packages here using the 'library()' function.
+
+# DO NOT use 'install.packages()' in this section; package installation should be done in the R console.
+
 ```
 
 
@@ -27,6 +32,11 @@ copy and paste your work by following each example from the lab manual for this 
 # Lab 2 Generalization exercises
 
 use the code from above to attempt to solve the extra things we ask you do for this assignment, you can set up your own code chunk here, but it has to have a different name than the one above 
+
+```{r Generalization_Exercise}
+
+
+```
 
 
 # Lab 2 Written answer question
