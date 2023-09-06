@@ -629,7 +629,7 @@ and numbers bigger than 2 or 3 hardly happen at all.
 
 ### Generalization Exercise
 
-(1 point - Pass/Fail)
+(4 points - Pass/Fail)
 
 Complete the generalization exercise described in your R Markdown
 document for this lab.
@@ -660,17 +660,21 @@ c.  Report the standard deviation of the sampling distribution of the
 
 ### Writing assignment
 
-(2 points - Graded)
+(8 points - Graded)
 
-Complete the writing assignment described in your R Markdown document
-for this lab. When you have finished everything. Knit the document and
-hand in your stuff (you can submit your .RMD file to blackboard if it
-does not knit.)
+Complete the writing assignment as outlined in the R Markdown document
+for this lab session. Once you've finished, knit the document and submit
+the resulting PDF to Canvas.
 
-1.  Explain the concept of sampling error (1 point)
+You'll notice that this assignment contains only 2 questions, as opposed
+to the usual 8 in previous labs. This is indicative of the level of
+detail and effort expected in your responses. Given their significance,
+don't be surprised if these questions reappear in future examinations.
+
+1.  Explain the concept of sampling error (4 points)
 
 2.  Explain why the standard deviation of the sampling distribution of
-    mean gets smaller as sample-size increases (1 point)
+    mean gets smaller as sample-size increases (4 points)
 
 General grading.
 
@@ -680,7 +684,7 @@ General grading.
 -   If your answer is generally correct but very difficult to understand
     and unclear you may receive half points for the question
 
-### Practice Problems
+### Suggested Practice Problems
 
 ------------------------------------------------------------------------
 
@@ -689,9 +693,8 @@ General grading.
 This is probably the most commonly-asked question in Statistics class.
 Everyone assumes that grading on a curve will benefit them. But does it?
 
-[Here](https://github.com/CrumpLab/statisticsLab/blob/master/data/spssdata/StatsGrades.sav)
-is a link to an SPSS file containing 50 students' exam grades (let's say
-it's the final exam for a Statistics class).
+The "grades.csv" file contains 50 students' exam grades (let's say it's
+the final exam for a Statistics class).
 
 1.  Create a table containing the mean and standard deviation for this
     sample of scores. Now, produce a frequency histogram of the score
@@ -708,3 +711,5 @@ it's the final exam for a Statistics class).
     professor only gives whole grades, no minuses or pluses). Calculate
     the z-score that corresponds to a raw score of 90 on this exam. Will
     you get an A with this grade? Why or why not?
+    
+    
