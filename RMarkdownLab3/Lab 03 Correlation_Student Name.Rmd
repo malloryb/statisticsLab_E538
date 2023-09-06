@@ -1,0 +1,39 @@
+---
+title: 'Lab 3 Correlation Student Name'
+author: "Student Name"
+date: "9/5/2023"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+# Lab 3 Lab Manual Exercise
+
+```{r Lab_Exercise}
+
+
+```
+
+# Lab 3 Generalization exercises
+```{r Generalization_Exercise}
+#use the code from above to attempt to solve the extra things we ask you do for this assignment
+
+
+```
+
+# Lab 3 Written answer question
+
+Write your answer here.
+
+# Lab 3 Suggested Practice Problems
+
+```{r Practice_Problems}
+#use the code from above to attempt to solve the practice problems 
+
+```
