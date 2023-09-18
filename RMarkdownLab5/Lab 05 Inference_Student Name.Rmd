@@ -1,7 +1,7 @@
 ---
 title: 'Lab 5: Inference/Hypothesis Testing'
 author: "Student Name"
-date: "7/24/2018"
+date: "9/18/2023"
 output: 
   html_document:
     toc: true
