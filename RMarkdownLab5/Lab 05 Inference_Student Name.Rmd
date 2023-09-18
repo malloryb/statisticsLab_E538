@@ -1,5 +1,5 @@
 ---
-title: 'Lab 5 Inference Student Name'
+title: 'Lab 5: Inference/Hypothesis Testing'
 author: "Student Name"
 date: "7/24/2018"
 output: 
@@ -16,11 +16,18 @@ knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 
 # Lab 5 Lab Manual Exercise
 
-copy and paste your work by following each example from the lab manual for this exercise
+```{r Lab_Exercise}
+
+
+```
 
 # Lab 5 Generalization exercises
 
-use the code from above to attempt to solve the extra things we ask you do for this assignment
+```{r Generalization_Exercise}
+#use the code from above to attempt to solve the extra things we ask you do for this assignment
+
+
+```
 
 # Lab 5 Written answer question
 
