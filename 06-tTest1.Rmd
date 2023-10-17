@@ -1,4 +1,4 @@
-# Lab 6: t-Test (one-sample, paired sample)
+# Lab Week 8: t-Test (one-sample, paired sample)
 
 ```{=html}
 <script>
