@@ -292,3 +292,4 @@ conduct-the-anova-2
 generalization-exercise-10
 writing-assignment-9
 practice-problems-6
+stretch-problems

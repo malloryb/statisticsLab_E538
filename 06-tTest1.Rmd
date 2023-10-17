@@ -28,7 +28,7 @@ Following this 1-2 week exposure period, the parents and their infant returned t
 ## Lab skills learned
 
 1.  Conducting a one-sample t-test
-2.  Conducting a two-sample t-test
+2.  Conducting a paired-sample t-test
 3.  Plotting the data
 4.  Discussing inferences and limitations
 
@@ -36,23 +36,14 @@ Following this 1-2 week exposure period, the parents and their infant returned t
 
 -   citation: Mehr, S. A., Song. L. A., & Spelke, E. S. (2016). For 5-month-old infants, melodies are social. Psychological Science, 27, 486-501.
 -   [Link to .pdf of article](http://journals.sagepub.com/stoken/default+domain/d5HcBHg85XamSXGdYqYN/full)
--   <a href="https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/MehrSongSpelke2016.csv" download>Data in .csv format</a>
--   [Data in SPSS format](https://drive.google.com/open?id=0Bz-rhZ21ShvOa3c4X3hqOWxwcUU)
 
 ## R
 
 ### Loading the data
 
-The first thing to do is download the .csv formatted data file, using the link above, or just click [here](https://drive.google.com/open?id=0Bz-rhZ21ShvOdW1wV0pmUTJSSk0). It turns out there are lots of ways to load .csv files into R.
+The first thing to do is download the .csv formatted data file from Canvas. 
 
-1.  Load the data.table library. Then use the `fread` function and supply the web address to the file. Just like this. No downloading required.
-
-```{r,eval=F}
-library(data.table)
-all_data <- fread("https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/MehrSongSpelke2016.csv")
-```
-
-2.  Or, if you downloaded the .csv file. Then you can use `fread`, but you need to point it to the correct file location. The file location in this next example will not work for you, because the file is on my computer.
+1.  Once you've downloaded the .csv file, you can use `fread` to open it. But, you need to point it to the correct file location. The file location in this next example **will not work for you**, because the file is on my computer.
 
 ```{r}
 library(data.table)
@@ -184,7 +175,7 @@ t.test(test_phase, baseline, paired=TRUE, var.equal=TRUE)
 ```
 
 ::: marginnote
-**Question:** Why was the paired samples t-test necessary if we already did two one sample t-test? What new question is the paired samples t-test asking?
+**Question:** Why was the paired samples t-test necessary if we already did the one sample t-test? What new question is the paired samples t-test asking?
 :::
 
 I'll leave it to you to interpret these values, and to see if they are the same as the ones in the paper. Based on these values what do you conclude? Is there a difference between the mean proportion looking times for the baseline and testing phase?
@@ -403,7 +394,7 @@ hist(simulated_mean_difference)
 
 ### Generalization Exercise
 
-( 1 point - Pass/Fail )
+( 4 points - Pass/Fail )
 
 The following code creates two variables with simulated means for each of 20 subjects in two conditions (A and B). Each sample comes from a normal distribution with mean = 100, and standard deviation = 25.
 
@@ -418,7 +409,7 @@ Condition_B <- rnorm(20,100,25)
 
 ### Writing assignment
 
-(2 points - Graded)
+(8 points - Graded)
 
 Complete the writing assignment described in your R Markdown document for this lab. When you have finished everything. Knit the document and hand in your stuff (you can submit your .RMD file to blackboard if it does not knit.)
 
@@ -441,7 +432,7 @@ General grading.
 -   Completely incorrect answers will receive 0 points.
 -   If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question
 
-### Practice Problems
+### Stretch Problems
 
 ------------------------------------------------------------------------
 

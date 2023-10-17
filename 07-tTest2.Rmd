@@ -23,7 +23,7 @@ What happened? Did the recruiters think job applicants were smarter when they re
 
 ## Lab skills learned
 
-1.  Conduct independent samples t-tests
+1.  Conduct independent samples (two-sample) t-tests
 2.  Generate figures
 3.  Discuss the results and implications
 
