@@ -294,3 +294,4 @@ writing-assignment-9
 practice-problems-6
 stretch-problems
 lab-week-8-t-test-one-sample-paired-sample
+lab-week-9-t-test-one-sample-paired-sample

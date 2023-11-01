@@ -1,0 +1,43 @@
+---
+title: 'Lab Week 10 ttest2 Student Name'
+author: "Student Name"
+date: "10/24/2023"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+
+# Lab Manual Exercise
+copy and paste your work by following each example from the lab manual for this exercise
+
+```{r Lab_Exercise, include=TRUE}
+
+
+```
+
+# Lab Generalization exercises
+use the code from above to attempt to solve the extra things we ask you do for this assignment
+
+```{r Lab_Generalization, include=TRUE}
+
+
+```
+
+# Lab Written answer question
+
+Write your answer here.
+
+
+# Lab stretch questions, required this time!
+
+```{r Lab_Stretch, include=TRUE}
+
+
+```
