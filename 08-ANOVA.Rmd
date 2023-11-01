@@ -57,7 +57,6 @@ Remember that any line with a \# makes a comment and the code does not run. Belo
 
 ```{r}
 library(data.table)
-#fread("https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/Jamesetal2015Experiment2.csv")
 all_data <- fread("data/Jamesetal2015Experiment2.csv")
 ```
 
@@ -422,19 +421,19 @@ The take home is that yes, even after removing outliers, the same basic pattern 
 
 That's ANOVA. Come back next week for another ANOVA tutorial, this time using within-subject data. It's called a repeated measures ANOVA, and it's what's happening next week.
 
-### Generalization Exercise
+### Generalization Exercise (6 points)
 
 Your task is to conduct the ANOVA using `Day_Zero_Number_of_Intrusions` as the dependent variable. Report the ANOVA table, a figure to show the means, and a short write-up of the results.
 
 ### Writing assignment
 
-(2 points - Graded)
+(6 points - Graded)
 
 Answer the following questions:
 
-1.  Explain why the ANOVA is called an omnibus test, and how the omnibus test is different from comparing specific means with t-tests. (1 point)
+1.  Explain why the ANOVA is called an omnibus test, and how the omnibus test is different from comparing specific means with t-tests. (3 points)
 
-2.  Explain the general similarity between the ratios that are used to calculate the F value and the t-value (1 point)
+2.  Explain the general similarity between the ratios that are used to calculate the F value and the t-value (3 points)
 
 General grading.
 
@@ -443,7 +442,7 @@ General grading.
 -   Completely incorrect answers will receive 0 points.
 -   If your answer is generally correct but very difficult to understand and unclear you may receive half points for the question
 
-### Practice Problems
+### Stretch Problems - Required Again (6 points)
 
 ------------------------------------------------------------------------
 
